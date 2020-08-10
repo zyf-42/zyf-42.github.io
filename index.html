@@ -1,309 +1,131 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hexo</title><meta name="description"><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/zyf-42/img/favicon.png"><link rel="canonical" href="https://gitee.com/zyf-42/zyf-42.git/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Hexo"><meta property="og:url" content="https://gitee.com/zyf-42/zyf-42.git/"><meta property="og:site_name" content="Hexo"><meta property="og:description"><meta property="og:image" content="https://gitee.com/zyf-42/zyf-42.git/img/avatar.png"><meta property="article:published_time" content="2020-08-10T08:14:08.392Z"><meta property="article:modified_time" content="2020-08-10T08:14:08.392Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
 
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://gitee.com/zyf-42/zyf-42.git/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/zyf-42/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/zyf-42/css/style.css">
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
 
-<meta name="generator" content="Hexo 5.0.1"></head>
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/zyf-42/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/zyf-42/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://gitee.com/zyf-42/zyf-42.git"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-sound-recording" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zyf-42/2020/08/10/sound-recording/" class="article-date">
-  <time datetime="2020-08-10T07:24:39.000Z" itemprop="datePublished">2020-08-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zyf-42/2020/08/10/sound-recording/">sound recording</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://gitee.com/zyf-42/zyf-42.git/2020/08/10/sound-recording/" data-id="ckdo72knj0001cctagke21ddq" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-audio-mixing" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zyf-42/2020/08/10/audio-mixing/" class="article-date">
-  <time datetime="2020-08-10T07:23:36.000Z" itemprop="datePublished">2020-08-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zyf-42/2020/08/10/audio-mixing/">audio-mixing</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="混音"><a href="#混音" class="headerlink" title="混音"></a>混音</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p><strong>今天我们来讲讲混音是什么？</strong></p>
-<p>你在b站的音乐区经常看见b站编曲的分轨作品流出，而混音就是把这些分轨混合在一起。</p>
-<h2 id="混音需要什么？"><a href="#混音需要什么？" class="headerlink" title="混音需要什么？"></a>混音需要什么？</h2><p>混音师需要的大致可分类为<em>软件</em>和<em>硬件</em>。</p>
-<p><em>软件</em>有<strong>DAW（数字音频工作站）</strong>。目前主流的<strong>DAW</strong>有<strong>studio one</strong>、<strong>Cubase</strong>和<strong>Pro tools</strong>。（如果你喜欢<em>FL studio</em>或<em>AU</em>也可以）。软件的优势在于制作的声音清楚且精细，我们后期也将使用软件进行教学。</p>
-<p><em>硬件</em>有调音台，声卡和各种效果器，都是模拟信号，主要用于音响设置。硬件的好处是做出来的音乐有特殊的音色，但缺点是模拟信号的声音很容易在电路中变得模糊不清。</p>
-<h2 id="效果器具体有哪些？"><a href="#效果器具体有哪些？" class="headerlink" title="效果器具体有哪些？"></a>效果器具体有哪些？</h2><p>效果器一般有<strong>EQ（频率均衡器）</strong>、<strong>混响</strong>和<strong>压缩</strong></p>
-<p>下面我们来具体聊一聊这些效果器</p>
-<h2 id="EQ：是滤波器的意思"><a href="#EQ：是滤波器的意思" class="headerlink" title="EQ：是滤波器的意思"></a><strong>EQ</strong>：是滤波器的意思</h2><pre><code>EQ又称均衡器，是音频效果器的一种，主要用于控制音频不同频段的输出音量的大小</code></pre>
-<h2 id="EQ的作用"><a href="#EQ的作用" class="headerlink" title="EQ的作用:"></a><strong>EQ的作用:</strong></h2><pre><code>1. 修正声音的问题
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/zyf-42/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/zyf-42/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-08-10 16:14:08'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.0.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/zyf-42/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/zyf-42/archives/"><div class="headline">Articles</div><div class="length_num">3</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/zyf-42/tags/"><div class="headline">Tags</div><div class="length_num">1</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/zyf-42/categories/"><div class="headline">Categories</div><div class="length_num">1</div></a></div></div></div><hr/></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/zyf-42/">Hexo</a></span><span class="pull-right menus"><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">Hexo</h1><div id="site_subtitle"><span id="subtitle"></span></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/zyf-42/2020/08/10/sound-recording/" title="sound recording">sound recording</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-08-10T07:24:39.000Z" title="Created 2020-08-10 15:24:39">2020-08-10</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/zyf-42/2020/08/10/audio-mixing/" title="混音">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/07/31/BS4ViqR62xlAKu8.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="混音"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/2020/08/10/audio-mixing/" title="混音">混音</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-08-10T07:23:36.000Z" title="Created 2020-08-10 15:23:36">2020-08-10</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">混音基本概念今天我们来讲讲混音是什么？
+你在b站的音乐区经常看见b站编曲的分轨作品流出，而混音就是把这些分轨混合在一起。
+混音需要什么？混音师需要的大致可分类为软件和硬件。
+软件有DAW（数字音频工作站）。目前主流的DAW有studio one、Cubase和Pro tools。（如果你喜欢FL studio或AU也可以）。软件的优势在于制作的声音清楚且精细，我们后期也将使用软件进行教学。
+硬件有调音台，声卡和各种效果器，都是模拟信号，主要用于音响设置。硬件的好处是做出来的音乐有特殊的音色，但缺点是模拟信号的声音很容易在电路中变得模糊不清。
+效果器具体有哪些？效果器一般有EQ（频率均衡器）、混响和压缩
+下面我们来具体聊一聊这些效果器
+EQ：是滤波器的意思EQ又称均衡器，是音频效果器的一种，主要用于控制音频不同频段的输出音量的大小
+EQ的作用:1. 修正声音的问题
 标准：客观、在相同响度下对比
 原则：和谐、好听、减少突兀的东西
 2. 决定声音的远近层次
-3. 美化声音</code></pre>
-<h2 id="EQ的操作"><a href="#EQ的操作" class="headerlink" title="EQ的操作:"></a><strong>EQ的操作:</strong></h2><pre><code>1. EQ扫频，Q值通过增大收窄，提升频率，扫动所有频率，找到问题
+3. 美化声音
+EQ的操作:1. EQ扫频，Q值通过增大收窄，提升频率，扫动所有频率，找到问题
 2. 将频率solo出来单独听
-3. 增幅
-4. 降幅
-5. 高切
-  作用：切掉一部分空气声
-  原因：空气声是专属于人声的频段，太多乐器抢了这个频段，人声甜美度、清晰度下降
-6. 低切
-  作用：减少声音的臃肿、拖沓，使得声音更有力度
- 原因：有更多的超低频时声音会更加松软，而非有力
-7. 高通
-8. 低通</code></pre>
-<h2 id="使用EQ的注意点"><a href="#使用EQ的注意点" class="headerlink" title="使用EQ的注意点:"></a><strong>使用EQ的注意点:</strong></h2><pre><code>1.  能用衰减EQ解决的问题，绝不用提升；衰减特色频率点
-2.  同等响度下最公正的对比声音
-3.  衰减有时候会使得频率更加清晰有力。有力并非都要堆砌在同一频段。剪掉不需要的频段，低频反而会更加清晰有力</code></pre>
-<h2 id="EQ频率认识"><a href="#EQ频率认识" class="headerlink" title="EQ频率认识"></a><strong>EQ频率认识</strong></h2><p><strong>20-80超低频</strong><br>        超低频（使声音松弛）需要衰减</p>
-<p><strong>80-250低频</strong></p>
-<p><strong>250-800中低频</strong><br>        中低频对歌曲的温暖度和清晰度有影响（二者互补）<br>        提升中低频提升温暖度下降清晰度<br>        衰减中低频温暖度下降清晰度提升</p>
-<p><strong>800-2.5K中频</strong><br>        提供了声音的硬度感，力度感，以及距离感（声音往前靠）</p>
-<p><strong>2.5K-5K中高频</strong><br>        提升中高频会使声音靠前，更有刺激性和兴奋感，但提升过量会使声音变得刺耳</p>
-<p><strong>5K-8K高频</strong><br>        提升高频会使声音的清晰度提升、冰冷感增强、更穿透力，但是声音也会更脆</p>
-<p><strong>8K-12K极高频</strong><br>        提升极高频会使声音的细节感更丰富，磁性感更强</p>
-<p><strong>12K+空气声</strong><br>        此时已经不能够作为一个主要频段来表现乐器的音高频率了<br>        提升的话人声最上面的磁性感、通透感会略有提升柔美的感觉</p>
-<p>混音的压缩控制动态就像是女生把眉毛拔了再画上去<br>通过画包络线重塑动态，让动态更好听更有规律</p>
-<p>然后是效果器，这里强烈推荐肥波的EQ和插件联盟的插件。</p>
-<p>混音是很创造性的工作，没有什么刻板的东西。一般的制作步骤为整理分轨，对齐分轨，（修音，不是必要的），加效果器。</p>
-<p>还有画包络线，就是控制音量来增强声音的动态（声音的张力）</p>
-<p>混音是增强声音的动态感，而母带则是压缩牺牲动态换取在音响端更好的播放效果。</p>
+3. 增 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/zyf-42/2020/08/10/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-08-10T07:01:42.813Z" title="Created 2020-08-10 15:01:42">2020-08-10</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://gitee.com/zyf-42/zyf-42.git/2020/08/10/audio-mixing/" data-id="ckdo72kne0000cctags4b31vz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+More info: Writing
+Run server1$ hexo server
 
+More info: Server
+Generate static files1$ hexo generate
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/zyf-42/2020/08/10/hello-world/" class="article-date">
-  <time datetime="2020-08-10T07:01:42.813Z" itemprop="datePublished">2020-08-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/zyf-42/2020/08/10/hello-world/">Hello World</a>
-    </h1>
-  
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://gitee.com/zyf-42/zyf-42.git/2020/08/10/hello-world/" data-id="ckdo6sfmr00009sta6x0tgwtk" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/zyf-42/archives/2020/08/">August 2020</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/zyf-42/2020/08/10/sound-recording/">sound recording</a>
-          </li>
-        
-          <li>
-            <a href="/zyf-42/2020/08/10/audio-mixing/">audio-mixing</a>
-          </li>
-        
-          <li>
-            <a href="/zyf-42/2020/08/10/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/zyf-42/fancybox/jquery.fancybox.css">
-
-  
-<script src="/zyf-42/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/zyf-42/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/zyf-42/img/avatar.png" onerror="this.onerror=null;this.src='/zyf-42/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/zyf-42/archives"><div class="headline">Articles</div><div class="length_num">3</div></a></div><div class="card-info-data-item is-center">      <a href="/zyf-42/tags"><div class="headline">Tags</div><div class="length_num">1</div></a></div><div class="card-info-data-item is-center"><a href="/zyf-42/categories"><div class="headline">Categories</div><div class="length_num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-recent-item"><div class="aside-recent-post"><div class="aside-post-info"><a class="aside-post-title" href="/zyf-42/2020/08/10/sound-recording/" title="sound recording">sound recording</a><time class="aside-post_meta post-meta-date" datetime="2020-08-10T07:24:39.000Z" title="Created 2020-08-10 15:24:39">2020-08-10</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/zyf-42/2020/08/10/audio-mixing/" title="混音"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/07/31/BS4ViqR62xlAKu8.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="混音"/></a><div class="aside-post-info"><a class="aside-post-title" href="/zyf-42/2020/08/10/audio-mixing/" title="混音">混音</a><time class="aside-post_meta post-meta-date" datetime="2020-08-10T07:23:36.000Z" title="Created 2020-08-10 15:23:36">2020-08-10</time></div></div><div class="aside-recent-post"><div class="aside-post-info"><a class="aside-post-title" href="/zyf-42/2020/08/10/hello-world/" title="Hello World">Hello World</a><time class="aside-post_meta post-meta-date" datetime="2020-08-10T07:01:42.813Z" title="Created 2020-08-10 15:01:42">2020-08-10</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>Categories</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">1</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/zyf-42/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 16px; color: #999">音乐制作</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/08/"><span class="card-archive-list-date">August 2020</span><span class="card-archive-list-count">3</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">Article :</div><div class="webinfo-article-count">3</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">UV :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">PV :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></section><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/zyf-42/js/utils.js"></script><script src="/zyf-42/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
