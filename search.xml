@@ -4,37 +4,6 @@
   
     
     <entry>
-      <title>细品谷歌</title>
-      <link href="/zyf-42/geek-google/"/>
-      <url>/zyf-42/geek-google/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-      
-      
-      <categories>
-          
-          <category> 科技 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 科技 </tag>
-            
-            <tag> 开发 </tag>
-            
-            <tag> 极客日常 </tag>
-            
-            <tag> 科技文化 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>极客日常的二三事</title>
       <link href="/zyf-42/geek/"/>
       <url>/zyf-42/geek/</url>
