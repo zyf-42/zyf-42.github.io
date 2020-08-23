@@ -4,11 +4,42 @@
   
     
     <entry>
+      <title>细品谷歌</title>
+      <link href="/zyf-42/geek-google/"/>
+      <url>/zyf-42/geek-google/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 科技 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 科技 </tag>
+            
+            <tag> 开发 </tag>
+            
+            <tag> 极客日常 </tag>
+            
+            <tag> 科技文化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>极客日常的二三事</title>
       <link href="/zyf-42/geek/"/>
       <url>/zyf-42/geek/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="科技文化小专栏"><a href="#科技文化小专栏" class="headerlink" title="科技文化小专栏"></a>科技文化小专栏</h1><h2 id="创设目的"><a href="#创设目的" class="headerlink" title="创设目的"></a>创设目的</h2><p>让我们轻轻松松地来聊聊科技，抬眼望见科技悄然改变的生活痕迹。</p><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="第一期————细品谷歌"><a href="#第一期————细品谷歌" class="headerlink" title="第一期————细品谷歌"></a>第一期————<a href="https://zyf-42.gitee.io/zyf-42/geek-google/">细品谷歌</a></h3>]]></content>
       
       
       <categories>
