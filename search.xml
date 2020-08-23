@@ -58,43 +58,18 @@
     
     
     <entry>
-      <title>【整理】录音介绍及教程</title>
-      <link href="/zyf-42/sound-recording/"/>
-      <url>/zyf-42/sound-recording/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="录音"><a href="#录音" class="headerlink" title="录音"></a>录音</h1><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><blockquote><p>1、电脑请使用daw数字音频工作站，连接声卡和录音设备（推荐）</p></blockquote><blockquote><p>2、手机请记得设置成MP3格式（不推荐！！！）</p></blockquote><blockquote><p>3、录音时请不要离麦克风太近以减少齿音和口水音，并控制音量大小避免出现爆音的情况</p></blockquote><blockquote><p>4、录音时请注意录制！干声！干声！干声!重要的事情说三遍。干声，又叫裸声，属于音频术语，一般指录音以后未经过任何后期处理和加工的纯人声</p></blockquote><blockquote><p>5、录音条件，即设备，环境，CV自身的声音状况等。至少应有独立声卡，麦克，环境最好安静</p></blockquote><blockquote><p>6、关于降噪，如无条件在安静环境中录音，请使用软件进行降噪处理，此处推荐iZotope RX 7 Audio Editor（但是！无论什么软件都会对音频文件产生损坏）</p></blockquote><blockquote><p>7、关于音频的后期处理，以eq衰减为主，不建议进行过多处理</p></blockquote><hr><h2 id="声音的降噪"><a href="#声音的降噪" class="headerlink" title="声音的降噪"></a>声音的降噪</h2><h3 id="软件请使用iZotope-RX-7-Audio-Editor"><a href="#软件请使用iZotope-RX-7-Audio-Editor" class="headerlink" title="软件请使用iZotope RX 7 Audio Editor"></a>软件请使用iZotope RX 7 Audio Editor</h3><blockquote><p>此软件可以实现<strong>降噪</strong>以及<strong>人声与伴奏的相互提取</strong>！！！</p></blockquote><p>教程参考：<br>音律屋《最强音频修复软件 RX7 使用教程》———— <a href="https://www.bilibili.com/video/av76156298">https://www.bilibili.com/video/av76156298</a></p><hr><h2 id="人声让位"><a href="#人声让位" class="headerlink" title="人声让位"></a>人声让位</h2><h3 id="为什么要做人声让位？"><a href="#为什么要做人声让位？" class="headerlink" title="为什么要做人声让位？"></a>为什么要做人声让位？</h3><blockquote><p>使人声与伴奏更好的协调，并不是减少伴奏的音量，不让伴奏盖过甚至抵消人声，这时用EQ做人声让位就成了很重要的技巧。</p></blockquote><h3 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h3><blockquote><p>一般而言配音的制作，人声的频率不会有太大的变化，调节EQ,降低伴奏的500~2000hz就可以了。</p></blockquote><p>参考资料：<br>配音、录视频如何让人声和背景音乐更好听———— <a href="https://www.bilibili.com/video/av96192206">https://www.bilibili.com/video/av96192206</a></p><hr><h2 id="录音摆位及制作"><a href="#录音摆位及制作" class="headerlink" title="录音摆位及制作"></a>录音摆位及制作</h2><h3 id="什么是摆位？"><a href="#什么是摆位？" class="headerlink" title="什么是摆位？"></a>什么是摆位？</h3><blockquote><p>摆位 即改变你听到的声音的位置。一般的立体声肯定是左右音量相同，这是声音就在你的正中间。<br>摆位有两种，左右摆位和前后摆位。即将声音放在左或右边，或放得离听众远或近一些。</p></blockquote><h3 id="实现方法如下："><a href="#实现方法如下：" class="headerlink" title="实现方法如下："></a>实现方法如下：</h3><blockquote><p>左右摆位：调节DWA中声像的位置<br>前后摆位：调节EQ（见混音——EQ的频率分析）</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 教程 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 音乐制作 </tag>
-            
-            <tag> 音频后期 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>【整理】混音介绍及教程</title>
+      <title>【整理】音频后期、音乐制作介绍及教程</title>
       <link href="/zyf-42/audio-mixing/"/>
       <url>/zyf-42/audio-mixing/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="混音"><a href="#混音" class="headerlink" title="混音"></a>混音</h1><hr><h2 id="混音之基础认识篇"><a href="#混音之基础认识篇" class="headerlink" title="混音之基础认识篇"></a><a href="https://zyf-42.gitee.io/zyf-42/audio-mixing-1/">混音之基础认识篇</a></h2><p><strong>学习本章，有助于帮助小白快速了解混音。从混音的定义、目的和所需的工具开始进行讲解。希望读者可以构建一个完美的混音初认识。</strong></p><hr><h2 id="混音之EQ篇"><a href="#混音之EQ篇" class="headerlink" title="混音之EQ篇"></a><a href="https://zyf-42.gitee.io/zyf-42/audio-mixing-2/">混音之EQ篇</a></h2><p><strong>EQ作为及其有用的一种效果器，在混音中承担着改变声音远近层次和优化音色的重要作用。希望读者在学习过后对混音或音频后期处理时能正确地使用EQ，获得完美的声音。</strong></p><hr><h2 id="混音之混响、压缩篇"><a href="#混音之混响、压缩篇" class="headerlink" title="混音之混响、压缩篇"></a><a href="https://zyf-42.gitee.io/zyf-42/audio-mixing-3/">混音之混响、压缩篇</a></h2><p><strong>混音和压缩被单独拿出来成一章，是因为其类型多样的特殊性。故教程只包含两种效果器的一般使用方法。希望在对这两种效果器有深入了解后，读者能拥有自行研究混响和压缩的能力，并以此创造出更具有空间感、立体感和动态好听的声音。</strong></p><hr><h2 id="混音之包络线篇"><a href="#混音之包络线篇" class="headerlink" title="混音之包络线篇"></a><a href="https://zyf-42.gitee.io/zyf-42/audio-mixing-4/">混音之包络线篇</a></h2><p><strong>包络线向来是混音中极其重要的一环，但b站关于包络线的视频教程却少的可怜。希望在学习过后，读者能系统地控制声音的动态变化，为您的混音添上画龙点睛之笔。注：内附部分母带内容，帮助读者初步了解母带。</strong></p><hr><h2 id="番外之录音篇"><a href="#番外之录音篇" class="headerlink" title="番外之录音篇"></a><a href="https://zyf-42.gitee.io/zyf-42/sound-recording/">番外之录音篇</a></h2><p>注：本教程除文字部分外，内嵌入大量b站视频，网页加载时间较长，请耐心等待。希望本教程的内容可以对您学习混音起到帮助。</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="混音"><a href="#混音" class="headerlink" title="混音"></a>混音</h1><hr><h2 id="混音之基础认识篇"><a href="#混音之基础认识篇" class="headerlink" title="混音之基础认识篇"></a><a href="https://zyf-42.gitee.io/zyf-42/audio-mixing-1/">混音之基础认识篇</a></h2><p><strong>学习本章，有助于帮助小白快速了解混音。从混音的定义、目的和所需的工具开始进行讲解。希望读者可以构建一个完美的混音初认识。</strong></p><hr><h2 id="混音之EQ篇"><a href="#混音之EQ篇" class="headerlink" title="混音之EQ篇"></a><a href="https://zyf-42.gitee.io/zyf-42/audio-mixing-2/">混音之EQ篇</a></h2><p><strong>EQ作为及其有用的一种效果器，在混音中承担着改变声音远近层次和优化音色的重要作用。希望读者在学习过后对混音或音频后期处理时能正确地使用EQ，获得完美的声音。</strong></p><hr><h2 id="混音之混响、压缩篇"><a href="#混音之混响、压缩篇" class="headerlink" title="混音之混响、压缩篇"></a><a href="https://zyf-42.gitee.io/zyf-42/audio-mixing-3/">混音之混响、压缩篇</a></h2><p><strong>混音和压缩被单独拿出来成一章，是因为其类型多样的特殊性。故教程只包含两种效果器的一般使用方法。希望在对这两种效果器有深入了解后，读者能拥有自行研究混响和压缩的能力，并以此创造出更具有空间感、立体感和动态好听的声音。</strong></p><hr><h2 id="混音之包络线篇"><a href="#混音之包络线篇" class="headerlink" title="混音之包络线篇"></a><a href="https://zyf-42.gitee.io/zyf-42/audio-mixing-4/">混音之包络线篇</a></h2><p><strong>包络线向来是混音中极其重要的一环，但b站关于包络线的视频教程却少的可怜。希望在学习过后，读者能系统地控制声音的动态变化，为您的混音添上画龙点睛之笔。注：内附部分母带内容，帮助读者初步了解母带。</strong></p><hr><h2 id="番外之录音篇"><a href="#番外之录音篇" class="headerlink" title="番外之录音篇"></a><a href="https://zyf-42.gitee.io/zyf-42/sound-recording/">番外之录音篇</a></h2><p><strong>一篇浅显易懂的录音教程，让你简单直观一天学会一般性的录音技巧。</strong></p><p>注：本教程除文字部分外，内嵌入大量b站视频，网页加载时间较长，请耐心等待。希望本教程的内容可以对您学习混音起到帮助。</p>]]></content>
       
       
       <categories>
           
           <category> 教程 </category>
+          
+          <category> 音乐 </category>
           
       </categories>
       
@@ -104,6 +79,12 @@
             <tag> 音乐制作 </tag>
             
             <tag> 音频后期 </tag>
+            
+            <tag> 混音 </tag>
+            
+            <tag> 录音 </tag>
+            
+            <tag> 母带 </tag>
             
         </tags>
       
