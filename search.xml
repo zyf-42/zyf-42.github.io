@@ -8,7 +8,7 @@
       <link href="/zyf-42/manual/"/>
       <url>/zyf-42/manual/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="本站食用手册"><a href="#本站食用手册" class="headerlink" title="本站食用手册"></a>本站食用手册</h1><h2 id="toc"><a href="#toc" class="headerlink" title="toc"></a>toc</h2><p>在文章页，会有一个目录，用于显示TOC。以进行页面内跳转。除部分文章外，默认关闭，可自行打开。</p><hr><h2 id="右下角按钮"><a href="#右下角按钮" class="headerlink" title="右下角按钮"></a>右下角按钮</h2><p>右下角按钮处有以下功能：<br>1、简体繁体互换<br>2、夜间模式按钮<br>3、阅读模式<br>4、字体大小调整<br>注：阅读模式下会去掉除文章外的内容，避免干扰阅读。</p><hr><h2 id="评论功能"><a href="#评论功能" class="headerlink" title="评论功能"></a>评论功能</h2><p>为方便作者及时统一回复，评论功能仅在留言板处开启，请留下邮箱地址，造成不便，敬请谅解。</p><div class="btn-center"><a class="btn-beautify button--animated " href="https://zyf-42.gitee.io/zyf-42/guestbook/"   title="前往评论"><i class="pink larger fa-fw"></i><span>前往评论</span></a></div><hr><h2 id="在线聊天功能"><a href="#在线聊天功能" class="headerlink" title="在线聊天功能"></a>在线聊天功能</h2><p>可在右下角处点击与客服（也就是作者本人）进行聊天。</p><hr><h2 id="大图查看模式"><a href="#大图查看模式" class="headerlink" title="大图查看模式"></a>大图查看模式</h2><p>点击图片，即可放大查看</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="本站食用手册"><a href="#本站食用手册" class="headerlink" title="本站食用手册"></a>本站食用手册</h1><h2 id="toc"><a href="#toc" class="headerlink" title="toc"></a>toc</h2><p>在文章页，会有一个目录，用于显示TOC。以进行页面内跳转。除部分文章外，默认关闭，可自行打开。</p><hr><h2 id="右下角按钮"><a href="#右下角按钮" class="headerlink" title="右下角按钮"></a>右下角按钮</h2><p>右下角按钮处有以下功能：<br>1、简体繁体互换<br>2、夜间模式按钮<br>3、阅读模式<br>4、字体大小调整<br>注：阅读模式下会去掉除文章外的内容，避免干扰阅读。</p><hr><h2 id="评论功能"><a href="#评论功能" class="headerlink" title="评论功能"></a>评论功能</h2><p>为方便作者及时统一回复，评论功能仅在留言板处开启，请留下邮箱地址，造成不便，敬请谅解。</p><div class="btn-center"><a class="btn-beautify button--animated " href="https://zyf-42.gitee.io/zyf-42/guestbook/"   title="前往评论"><i class="pink larger fa-fw"></i><span>前往评论</span></a></div><hr><h2 id="在线聊天功能"><a href="#在线聊天功能" class="headerlink" title="在线聊天功能"></a>在线聊天功能</h2><p>可在右下角处点击与客服（也就是作者本人）进行聊天。</p><hr><h2 id="大图查看模式"><a href="#大图查看模式" class="headerlink" title="大图查看模式"></a>大图查看模式</h2><p>点击图片，即可放大查看</p><hr><h2 id="分享功能"><a href="#分享功能" class="headerlink" title="分享功能"></a>分享功能</h2><p>你可以使用浏览器自带的分享功能，也可以使用网页右下的分享功能。</p><hr><h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p>你可以跳转至友人帐界面，看看大佬们的博客和本人推荐的一系列网站。<br>也可以在评论区和我交换友链哦！</p>]]></content>
       
       
       <categories>
@@ -180,8 +180,6 @@
       <categories>
           
           <category> 教程 </category>
-          
-          <category> 音乐 </category>
           
       </categories>
       
