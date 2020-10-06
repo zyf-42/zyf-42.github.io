@@ -2,7 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/audio-mixing/</loc>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/geek/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/book-recommend-1/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/book-recommend-3/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/book-recommend-4/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/book-recommend-2/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/book-recommend-5/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/sound-recording/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/audio-mixing-4/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/audio-mixing-1/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/audio-mixing-3/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/audio-mixing-2/</loc>
+    
+    <lastmod>2020-10-06</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/fiction/index.html</loc>
     
     <lastmod>2020-10-06</lastmod>
     
@@ -44,20 +121,6 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/geek/</loc>
-    
-    <lastmod>2020-10-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/book-recommend/</loc>
-    
-    <lastmod>2020-10-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/guestbook/index.html</loc>
     
     <lastmod>2020-10-04</lastmod>
@@ -68,13 +131,6 @@
     <loc>https://gitee.com/zyf-42/zyf-42.git/English-note/</loc>
     
     <lastmod>2020-10-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/fiction/index.html</loc>
-    
-    <lastmod>2020-08-29</lastmod>
     
   </url>
   
@@ -124,27 +180,6 @@
   
   <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/</loc>
-    <lastmod>2020-10-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E6%B7%B7%E9%9F%B3/</loc>
-    <lastmod>2020-10-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E5%BD%95%E9%9F%B3/</loc>
-    <lastmod>2020-10-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E6%AF%8D%E5%B8%A6/</loc>
     <lastmod>2020-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -207,13 +242,6 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E8%8B%B1%E8%AF%AD/</loc>
-    <lastmod>2020-10-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/</loc>
     <lastmod>2020-10-06</lastmod>
     <changefreq>daily</changefreq>
@@ -222,6 +250,13 @@
   
   <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E6%95%99%E5%AD%A6/</loc>
+    <lastmod>2020-10-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E8%8B%B1%E8%AF%AD/</loc>
     <lastmod>2020-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
