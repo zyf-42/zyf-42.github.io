@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/reaction-principle/</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/c++/</loc>
     
     <lastmod>2020-10-11</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/book-recommend-2/</loc>
-    
-    <lastmod>2020-10-10</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/reaction-principle/</loc>
     
     <lastmod>2020-10-10</lastmod>
     
@@ -165,20 +165,6 @@
 
   
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/</loc>
-    <lastmod>2020-10-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/</loc>
-    <lastmod>2020-10-11</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E6%9C%89%E6%9C%BA%E5%8C%96%E5%AD%A6/</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>daily</changefreq>
@@ -187,6 +173,20 @@
   
   <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/</loc>
+    <lastmod>2020-10-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -293,14 +293,14 @@
 
   
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/categories/%E9%AB%98%E8%80%83/</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/categories/%E9%AB%98%E8%80%83/</loc>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
