@@ -8,7 +8,7 @@
       <link href="/zyf-42/c++/"/>
       <url>/zyf-42/c++/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="c-笔记（教程）"><a href="#c-笔记（教程）" class="headerlink" title="c++笔记（教程）"></a>c++笔记（教程）</h1><h2 id="关于c"><a href="#关于c" class="headerlink" title="关于c++"></a>关于c++</h2><p>C++ 是一种中级语言，它是由 Bjarne Stroustrup 于 1979 年在贝尔实验室开始设计开发的。C++ 进一步扩充和完善了 C 语言，是一种面向对象的程序设计语言。C++ 可运行于多种平台上，如 Windows、MAC 操作系统以及 UNIX 的各种版本。目前广泛用于各个领域，与游戏引擎配合最佳。（这里强推2021年出的虚幻5，真的强。）</p><hr><h2 id="c-的运行原理"><a href="#c-的运行原理" class="headerlink" title="c++的运行原理"></a>c++的运行原理</h2><h3 id="Q1：为什么一定是c-与游戏引擎？"><a href="#Q1：为什么一定是c-与游戏引擎？" class="headerlink" title="Q1：为什么一定是c++与游戏引擎？"></a>Q1：为什么一定是c++与游戏引擎？</h3><p>因为它在控制硬件方面的强大能力，也就是其对CPU的精确控制。这里就要提到编译与虚拟机的问题。<br>除了c++，很多的编程语言都需要在虚拟机上运行。 这意味着其他语言在运行时需要被先编译成中间语言，然后在你的项目在平台运行时，虚拟机将中间代码转换为机器码。就比如你用中文写了一本书，在国外出售，你的读者在买书的时候一并带一个翻译回家。显然没有直接将书翻译成英文来得效率高。当然也有其他的本地语言，只是大家已经习惯了使用c++。</p><h2 id="Q2-那什么是编译？"><a href="#Q2-那什么是编译？" class="headerlink" title="Q2: 那什么是编译？"></a>Q2: 那什么是编译？</h2>]]></content>
       
       
       <categories>
