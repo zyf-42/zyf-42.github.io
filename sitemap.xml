@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/bangumis/index.html</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/video-production/</loc>
+    
+    <lastmod>2020-10-11</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/reaction-principle/</loc>
     
     <lastmod>2020-10-11</lastmod>
@@ -107,13 +121,6 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/fiction/index.html</loc>
-    
-    <lastmod>2020-10-06</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/link/index.html</loc>
     
     <lastmod>2020-10-06</lastmod>
@@ -124,13 +131,6 @@
     <loc>https://gitee.com/zyf-42/zyf-42.git/categories/index.html</loc>
     
     <lastmod>2020-10-05</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/video-production/</loc>
-    
-    <lastmod>2020-10-04</lastmod>
     
   </url>
   
