@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/hexo/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/notice/</loc>
+    <lastmod>2020-10-30</lastmod>
   </url>
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/c++/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/hexo/</loc>
+    <lastmod>2020-10-30</lastmod>
   </url>
   <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/manual/</loc>
-    <lastmod>2020-10-24</lastmod>
+    <lastmod>2020-10-30</lastmod>
   </url>
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/Organic-Chemistry/</loc>
-    <lastmod>2020-10-24</lastmod>
-  </url>
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/reaction-principle/</loc>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/c++/</loc>
     <lastmod>2020-10-24</lastmod>
   </url>
   <url>
@@ -29,19 +25,15 @@
     <lastmod>2020-10-24</lastmod>
   </url>
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/book-recommend-3/</loc>
-    <lastmod>2020-10-24</lastmod>
-  </url>
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/book-recommend-4/</loc>
-    <lastmod>2020-10-24</lastmod>
-  </url>
-  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/book-recommend-2/</loc>
     <lastmod>2020-10-24</lastmod>
   </url>
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/biology/</loc>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/book-recommend-3/</loc>
+    <lastmod>2020-10-24</lastmod>
+  </url>
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/book-recommend-1/</loc>
     <lastmod>2020-10-24</lastmod>
   </url>
   <url>
@@ -63,9 +55,5 @@
   <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/geek/</loc>
     <lastmod>2020-10-24</lastmod>
-  </url>
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/English-note/</loc>
-    <lastmod>2020-10-23</lastmod>
   </url>
 </urlset> 

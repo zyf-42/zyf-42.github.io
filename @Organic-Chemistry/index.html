@@ -1,0 +1,249 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>【整理】高中有机化学笔记 | zyf-42的小站</title><meta name="description" content="详细记录了高中有机化学的笔记，分享给大家！（有增改的章节:醇的化学转换、苯酚。更新至羧酸。关于酯的内容会在之后与油脂一起更新。）"><meta name="keywords" content="高中有机化学"><meta name="author" content="zyf-42"><meta name="copyright" content="zyf-42"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/zyf-42/img/tou.jpg"><link rel="canonical" href="https://gitee.com/zyf-42/zyf-42.git/@Organic-Chemistry/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="【整理】高中有机化学笔记"><meta property="og:url" content="https://gitee.com/zyf-42/zyf-42.git/@Organic-Chemistry/"><meta property="og:site_name" content="zyf-42的小站"><meta property="og:description" content="详细记录了高中有机化学的笔记，分享给大家！（有增改的章节:醇的化学转换、苯酚。更新至羧酸。关于酯的内容会在之后与油脂一起更新。）"><meta property="og:image" content="https://gitee.com/zyf-42/zyf-42.git/img/8.jpg"><meta property="article:published_time" content="2020-09-19T02:28:11.000Z"><meta property="article:modified_time" content="2020-10-30T13:02:26.087Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/zyf-42/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/zyf-42/',
+  hexoversion: '5.0.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"limitCount":50,"languages":{"author":"作者: zyf-42","link":"链接: ","source":"来源: zyf-42的小站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2020-10-30 21:02:26'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><style type="text/css">#toggle-sidebar {bottom: 80px}</style><meta name="generator" content="Hexo 5.0.1"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/zyf-42/img/tou.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/zyf-42/archives/"><div class="headline">文章</div><div class="length_num">14</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/zyf-42/tags/"><div class="headline">标签</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/zyf-42/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/zyf-42/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/guestbook/"><i class="fa-fw far fa-edit"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/bangumis/"><i class="fa-fw fa-fw fas fa-list"></i><span> 追番</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div id="sidebar"><i class="fas fa-arrow-right" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%AB%98%E4%B8%AD%E6%9C%89%E6%9C%BA%E5%8C%96%E5%AD%A6%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">高中有机化学基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%89%E6%9C%BA%E5%8C%96%E5%AD%A6%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">有机化学前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%B7%E7%83%83%E3%80%81%E7%BC%BA%E6%B0%A2%E6%8C%87%E6%95%B0%E3%80%81%E7%AD%89%E6%95%88%E6%B0%A2%E3%80%81%E8%B0%B1%E5%9B%BE%E3%80%81%E5%BC%82%E6%9E%84%E5%8C%96"><span class="toc-number">1.2.</span> <span class="toc-text">烷烃、缺氢指数、等效氢、谱图、异构化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E5%88%86%E5%BC%82%E6%9E%84%E3%80%81%E7%83%AF%E7%83%83"><span class="toc-number">1.3.</span> <span class="toc-text">同分异构、烯烃</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B1%E8%BD%AD%E4%BA%8C%E7%83%AF%E7%83%83%E3%80%81%E8%8B%AF"><span class="toc-number">1.4.</span> <span class="toc-text">共轭二烯烃、苯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E7%B3%BB%E7%89%A9%E3%80%81%E8%8B%AF%E7%9A%84%E5%90%8C%E7%B3%BB%E7%89%A9%E3%80%81%E5%8D%A4%E4%BB%A3%E7%83%83"><span class="toc-number">1.5.</span> <span class="toc-text">同系物、苯的同系物、卤代烃</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%86%87"><span class="toc-number">1.6.</span> <span class="toc-text">醇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%86%87%E7%9A%84%E5%8C%96%E5%AD%A6%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.7.</span> <span class="toc-text">醇的化学转换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8B%AF%E9%85%9A"><span class="toc-number">1.8.</span> <span class="toc-text">苯酚</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%86%9B"><span class="toc-number">1.9.</span> <span class="toc-text">醛</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BE%A7%E9%85%B8"><span class="toc-number">1.10.</span> <span class="toc-text">羧酸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A5%9E%E5%A5%87%E7%9A%84%E7%9F%A5%E8%AF%86%E5%A2%9E%E5%8A%A0%E4%BA%86"><span class="toc-number">1.11.</span> <span class="toc-text">神奇的知识增加了</span></a></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(/zyf-42/img/8.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/zyf-42/">zyf-42的小站</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/zyf-42/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/guestbook/"><i class="fa-fw far fa-edit"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/bangumis/"><i class="fa-fw fa-fw fas fa-list"></i><span> 追番</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">【整理】高中有机化学笔记</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-09-19T02:28:11.000Z" title="发表于 2020-09-19 10:28:11">2020-09-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-10-30T13:02:26.087Z" title="更新于 2020-10-30 21:02:26">2020-10-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/zyf-42/categories/%E9%AB%98%E8%80%83/">高考</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">Welcome to my blog, enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="9b9b2975384370f86b7ec2c59f561d4988c97c7387281364ef2a68876cbb3975">53435b94ce43e0251e6a9fa32420a8243b646aec21ad6e00c2494e7c8a43c6f6d5e79f8610d9f3216390fa48ef3e45adcf72976ea0c5f288361206f509b736b8cde11e8e3dbdb54032428fa0d87c23f945467e3aadfcdb677b2981ac17615de2e4a71890eb27e903d0db450a056bc77185061fcb48a13d80cd4d336d407d41169ffb54262b6c4f93f14709662b6a5fa548fdac05df117b2dbefca81357cbee6da0ebd0920bbaf5e2c7b45ffa1daecfae574b3e3f9c6f1d647e0d5983ad0b07c2225a304e31e8bac05e4396fd67a01a253126042144483141479b924a27f24efc58b43acfc8f2ecfa5e7fee6144a2712a606103c6a3c4bd840ac33c96367a280049d5fb0bfd2c1c61fe52143f935164853fdcf5b52b11bfdf9fd1d30118689817c3a9c4447cc9f624303783a49dd0a456b58c01c7fd92dd70da18a86b035004238d208286e1843b425826ba91e5057f7b7b7260bcdaf7018d5b5392a2cd7bfd7dd363ebc517d068951e14d18774a4a532c0013396e90ffa143c97dc15ddd9445463135178ed4371b9bdf050f610821774f9980c5ea28b60a16e123466275d0f505fb6624cef80dfc39559a23d161887bdb742685c2a05147c9a351154e3b90739f1a7ff991f1f62822f00a99a1128c6d24a8e80b6b0c9b388fa988509416e81b7a1dfe82ea4758b5009846e2171161eca8b723282447650eefc1e0fa3ab1f6a1177ce5347d1e704160077ea2b194f8e8695bb0ba135c0e1c404c15911b3e51b87eebfd52ce7e6add7309c1dcc09a2b3aa785127b4e33c42c04b6bc6e2dda358feed49ae769c50b9c618652a4cafaeef232ce4e1e7d1395180b3f6753ed7be4538da1a88ca51dcf482f9fc4a2e431a3b16c91330b51629711d951fc9b8765d3d72fff27287522bdcb1ff6b4a6ec454d1a9d513944b12f48d1810a099f4af7be5cbc6dc90349707b4b71372cfe11383605cd86b32f869b5158f80361eaab1ea9137f275735f45abf374f3ced00ef0658fa7e5343fc5b585d81774c1361022aa645ee6445b007b81cd705063a8e068748711ec42f43800499b3f43770ec42b26de2439e9d925583a47de2bce028388d45b91d9039c2137176befe363e4fbf257836852cfa8a4de48aa2ce65f7455fe298e684d8831325113a9094fcebd663b8e2101371f1cbe9604569badfc5ff1e00c80e7c5e3d975e4b477af462b094629a3992ac3e32991aa19633abf2be8c5abdbb04ffbea5b246126b51f83bc3661063f40949bd6712e3416a01545a828301226fbc99dca14191a5e3aa5d47810d1e783f08bddff81ab0b279719a6febf8685ec661b3830122f5a63d59524e4e009c5d50ca4ac61154b9707a3a6a22ae4f09460e77272036eec4c5678e56cf58dd7fe56a2bebf59cce6f20999186bbc2f9c4c362596a223bd2561af8385480a0849c9cc797e6ba5bb1602b7831551dee065eb43a137a769b2c049482eb3d1880214c15e5e6583a1830acea58ddb2fd6a75398d239000dc41a11deaa87c0414fb636fb68d98763f5ee3d7584a1250e26864c9729c9d0b1aa1e2af7da839e800c85a348605572ce951c467aedbe0c1e414606e3b79291b8856a33c89a4521efcad7c4c57650aa1caaed7b08c2680a83d3d32e891b7646a224a43d1f1de7a4065ee890b6fa9c7af6d100b2a280a1f277acfd057faa8742fdcca08400593cc3ac80f4a319ef9250da8d3add0f398a757ac1178eb07b1ac322ab21088024ba7f49862a2e461b8a8bb67fa10e83d0cdc0818e55168da891d9992b7e5c020348b2c672a67b909e701da7a67242ecb24c1b374479383b55a9912c3691fbacd4241fb542e9a060d3752cb66826ecab966b3be061b303460f913d90a851a2a3d7d921384d62950fc5f273c5d48e9d81e711184952e6c941635afeb5a054fb1425e07554a1bfb5931239437bde07a5c7a9738a6f1281b573179756b1bd280df568db49a1b40d77d803d3f962a3fcd8a01a6bc64db0232ecfd64d6681719d342b65726f62e8d1c855a3317750a1d7189122622ca281f2fe2be3b6343d43c59dbc603fc32635e2d06c3bfc4cdb130adaf142e5e11b332632a7e9eed976ab0623d1145b8e0a5fd14a876d8f21e5612d257abb84b13be68760c6c7a2161cb02eda7c37e3c707db52a92277c938f5942e43885d6b556e3a14692a0fb7cdd38dd353fbb22bbea0973fba34fae3a9948ed868a6ca85479cc4ac0bc88eb7cbd21e21f480951fcf25bee9055f52d12145c35bbd2c1f2e73efb0c6aeab6fff023beb18403a3eda7988ddff9ef46eeafeafcabd1bcdfe64e3ed285d47d5b3509dc3e6a0ee5f21fd2b9ddc276d5672d6a849c374aa5b1d35426c16bc2a115f3d17b51d8f9b934d0ad782e76677d2fd06ab5e143a641dc364d3512bb26d8bbcb06e0d75b9bfecedc5dbb25c86b635162eb254be9b2b1f1551bd33e9f8cf536f9e210545b6ad2e2713edf3ac7110ded60cfde4f8ae5934f046f66c23a1a0d5827084a1aa21a1119e3393684967554b5105a1227cf1270caaa14d34837aef195c6b16f5b858b2f316b40d77cb3535e841b3126c4ebee6fe17153c0d32d97628f5abc9ade212032958a189e34a1c0dc5f2c0f83446e201e263934e525c76e79b3bd3df772f26beb165725b0a296d91034eceae8e4da2e30db1acac134cb479586c4189c7221f81da662c4264be9cc332a3da02bf43287cf893b0675b7fd5a3a3d290b6ec54e20b90bc7312719f0bceee1c197bfa5a66921c33faad97dbab398d26461af9e4872e8fb1ca18cea88661f9fe57ed002b6181c8ce2af76780180889e131381e70805fdf4b13263747e39db1cb0f9a2d148fd4217fdb58fe751e50f362e5d040667cc28e5ba338f807277373e9c7057b0f9086e76b3ce2627b39a8e073b02771987b1cdc5cb7b246ac76bc73d9fc3b0b1b67936d1a8ae0c6137424edf1dc5500b4cc55dede28d3413c7488e25b3910b685a2232a299f9386e08c2fc4caeaacbfa85cac3128618da5ae2565bbf75daa85180aa5239a747c1fd24cfe8f20502002630c65a92dea5ed2b3b1e4c13b6c1a0497db071bcf62280b4470319375b2ad061dfb0f0b4e7002b030f59afdf9f6b23983939593d7955e972b7f148add7b8179f15dd43eda64ff5085795c579ae3c5e13e5fb178279ce2a2f86f1b0c2b8ec49222b7853f48470d23e1d43e4ca8e54741838d5b777fd8f15617960593831024e96c11b6af43dbca11bd4903172f5a7083e4410ad194118193378a342c802906b8b373a806de02aac30d9aa69ecbe7ae422adad7c2701a4134e6a405fdec78182a615437cbbad47532d749cca692b554049b54c37cba66799a6530b24cf2e0dac106f7d9e1854c2b5d96b9e81a94cf24bed134e5f76c075310263c5899d32ee265a4631fd60fe355029ba8f4c38d5ef68d1bb734c385eea0e82503b149f982cacaaf3b78acf84b2e7f0921461842073231862d02c896f6897dab26cdec04fcd6e8d176358c60ad0044688fc3e068794088f977c125bee2222887a1aee76854371ebfb5b806d2073dc405246e7fc8c0f5f9daef2e0cdd0a60041aebf3b3015fd11ca0a0a22daca5cc58def1d60c534bca6a54e7f5103d5f40ecc3b15ee657bdd0a7c3f0f99a58d27c9fa0cab7a440d70fe05b5b41a67de3717f301b2e8cc462f3c736fdefe1c3e1faadc1481525d88313c9e480fddbaba169227dc848a04be80af425731a1c023d0f85afd69cb1641ded3a345b19b805ade6e2aa77223efbf207958da30183203e8100237fedd390488744295903b0f47b6058d327dc7abccbc6c315f75e285e969c7197d73fe6e339c43589e186f0e8abd0992d60314782fc43868597adb073d8ce683bce3424a81aaf5d0451930d02181c6688e3b20141e1cc06e147390260e77095b7da00413fe1c7e730dab4f80edf21cbbe9d80dd1b7c147dea388953ab590a89df6ac1e594f9e3fb0b0ad2c8b1ea3769e5b88ead63efc5810a0feb44213b55a874b3dc52612a98120998cf1f51838192d0265563eb191beb817f30c2a3225b0d29a356af97e89deb0dd714c33921b65023f1c69ac4f5fecdf1e8fb022dd942f489a6614b6166b9b70b804428dee837732deb4b7fa5c84b149648e58a9f153fc3341e8b545822080e9634c3bfeb551513fe0bc7afb4b5bb17dad474d2530eac4bd75943d0d5d24719c1375d0e9cf807f281bbff76f82af6ee73a23027e832f46f94eda55e853ffeed3aa608e33740713c8aee87dcb9a89484531b9a56b7ba6c6898f056036c039c68ddc329b8e146065b7a9e838f5ceafcd227648cd4c90436e32eae753fbf3b1e502e488c021f5c4ad1e5b1ec15c43e19c2669cadc620e4d1aee1d8812552981f9ed311109f0eebc122ff66cd6aa0ca4e5903212451c7fa8911cda82a24483532871f65a3715d1c343a2c8af2660df5c28cdef5c77168aba85a8ee81c79a88b1f53eeca034886610fef74ac1f6396f8ea491275b8c4ec0ccc3257cce3a643305c903e7e064bd2c63d412115c89c32b2f4eed0a6ed0bb4dbecde81cd7ca8945a06e261b9d8ecd53d4f0432ae561d74a23208596c4e2e3b84dc4b08ca846f447879ed89b56e1fab3b4c7194d400a9dac9c2d1d87ecaf96d1c2924d6b470aee1658d7335a056475eb454f8009266eede61a6b46401248e14a873e2e7efec81197075e9bf8afdaf1bce4879c2feeeb3ae392e24b54cb94c2630f7ba614cd679a2228e65b9674dc3cb7cc484b1aeed75f1c6afcc3b6ccecf5bc968a08538485b2df1b632cdc434be0fae094245231cf069f2769355f5601f61819775b4345bbb9959442027977e731304ef4ccb0c6df2d5755f8a8fa95a2e61f153101fc4450102278f5dfe8dc294ef54facef2f77dabc9510fa781e5a750b194d5c7d156426a57c12f</script>
+</div>
+<script src="/zyf-42/lib/blog-encrypt.js"></script><link href="/zyf-42/css/blog-encrypt.css" rel="stylesheet" type="text/css"></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">zyf-42</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://gitee.com/zyf-42/zyf-42.git/@Organic-Chemistry/">https://gitee.com/zyf-42/zyf-42.git/@Organic-Chemistry/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://gitee.com/zyf-42/zyf-42.git" target="_blank">zyf-42的小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/zyf-42/tags/%E6%9C%89%E6%9C%BA%E5%8C%96%E5%AD%A6/">有机化学</a><a class="post-meta__tags" href="/zyf-42/tags/%E7%AC%94%E8%AE%B0/">笔记</a></div><div class="post_share"><div class="social-share" data-image="/zyf-42/img/8.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wei.png" target="_blank"><img class="post-qr-code-img" data-lazy-src="/zyf-42/img/wei.png" alt="微信支付"/></a><div class="post-qr-code-desc">微信支付</div></li><li class="reward-item"><a href="/img/zhi.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/zyf-42/img/zhi.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" style="background-color: transparent;" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By zyf-42</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">WELCOME TO MY BLOG !</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/zyf-42/js/utils.js"></script><script src="/zyf-42/js/main.js"></script><script src="/zyf-42/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/zyf-42/js/search/local-search.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'WxoHFLrtHTPcpcEA48PpX0Ie-gzGzoHsz',
+      appKey: 'o2nfIC4kmGB66XcX8GQJUkhk',
+      placeholder: '记得留下你的昵称和邮箱....可以快速收到回复（网址为选填）',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="aplayer no-destroy" data-id="605169979" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script src="/zyf-42/js/third-party/click_heart.js" async="async"></script><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "4e771744-29ac-443b-b0e0-7bd5156c4715";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (true) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  'meta[name=description]',
+  '#config_change',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+const pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+})
+
+document.addEventListener('pjax:complete', function () {
+  refreshFn()
+
+  $('script[data-pjax]').each(function () {
+    $(this).parent().append($(this).remove())
+  })
+
+  GLOBAL_CONFIG.islazyload && lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  if (typeof gtag === 'function') {
+    gtag('config', '', {'page_path': window.location.pathname});
+  }
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+})
+
+document.addEventListener('pjax:send', function () {
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  $(window).off('scroll')
+
+  //reset readmode
+  $('body').hasClass('read-mode') && $('body').removeClass('read-mode')
+
+  //reset font-size
+  $('body').css('font-size') !== originFontSize && $('body').css('font-size', parseFloat(originFontSize))
+})</script></div></body></html><script type="text/javascript" src="/js/crash_cheat.js"></script>

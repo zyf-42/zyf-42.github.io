@@ -1,0 +1,249 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>高中化学反应原理 | zyf-42的小站</title><meta name="description" content="详细记录了高中化学反应原理的笔记，分享给大家！"><meta name="keywords" content="高中化学反应原理"><meta name="author" content="zyf-42"><meta name="copyright" content="zyf-42"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/zyf-42/img/tou.jpg"><link rel="canonical" href="https://gitee.com/zyf-42/zyf-42.git/@reaction-principle/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="高中化学反应原理"><meta property="og:url" content="https://gitee.com/zyf-42/zyf-42.git/@reaction-principle/"><meta property="og:site_name" content="zyf-42的小站"><meta property="og:description" content="详细记录了高中化学反应原理的笔记，分享给大家！"><meta property="og:image" content="https://gitee.com/zyf-42/zyf-42.git/img/12.jpg"><meta property="article:published_time" content="2020-10-10T11:10:50.000Z"><meta property="article:modified_time" content="2020-10-30T12:53:37.472Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/zyf-42/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/zyf-42/',
+  hexoversion: '5.0.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"limitCount":50,"languages":{"author":"作者: zyf-42","link":"链接: ","source":"来源: zyf-42的小站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: true    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: true,
+  postUpdate: '2020-10-30 20:53:37'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><style type="text/css">#toggle-sidebar {bottom: 80px}</style><meta name="generator" content="Hexo 5.0.1"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/zyf-42/img/tou.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/zyf-42/archives/"><div class="headline">文章</div><div class="length_num">14</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/zyf-42/tags/"><div class="headline">标签</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/zyf-42/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/zyf-42/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/guestbook/"><i class="fa-fw far fa-edit"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/bangumis/"><i class="fa-fw fa-fw fas fa-list"></i><span> 追番</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div id="sidebar"><i class="fas fa-arrow-right" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content toc-div-class" style="display:none"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%AB%98%E4%B8%AD%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94%E5%8E%9F%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">高中化学反应原理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8D%E5%BA%94%E7%83%AD%E4%B8%8E%E7%84%93%E5%8F%98%E3%80%81%E7%83%AD%E5%8C%96%E5%AD%A6%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%80%81%E8%BF%87%E6%B8%A1%E6%80%81%E7%90%86%E8%AE%BA%E3%80%81%E7%9B%96%E6%96%AF%E5%AE%9A%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text">反应热与焓变、热化学方程式、过渡态理论、盖斯定理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%AD%E5%80%BC%E3%80%81%E4%B8%AD%E5%92%8C%E7%83%AD%E3%80%81%E5%8E%9F%E7%94%B5%E6%B1%A0"><span class="toc-number">1.2.</span> <span class="toc-text">热值、中和热、原电池</span></a></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(/zyf-42/img/12.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/zyf-42/">zyf-42的小站</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/zyf-42/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/guestbook/"><i class="fa-fw far fa-edit"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/bangumis/"><i class="fa-fw fa-fw fas fa-list"></i><span> 追番</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">高中化学反应原理</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-10-10T11:10:50.000Z" title="发表于 2020-10-10 19:10:50">2020-10-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-10-30T12:53:37.472Z" title="更新于 2020-10-30 20:53:37">2020-10-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/zyf-42/categories/%E9%AB%98%E8%80%83/">高考</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">Welcome to my blog, enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="7580f22779bca8ebe8109c10ae4653c19ca02ceac7a8e8ae3a46981a875085e5">53435b94ce43e0251e6a9fa32420a8243b646aec21ad6e00c2494e7c8a43c6f6d5e79f8610d9f3216390fa48ef3e45adcf72976ea0c5f288361206f509b736b8cde11e8e3dbdb54032428fa0d87c23f945467e3aadfcdb677b2981ac17615de2e4a71890eb27e903d0db450a056bc77185061fcb48a13d80cd4d336d407d41169ffb54262b6c4f93f14709662b6a5fa548fdac05df117b2dbefca81357cbee6da0ebd0920bbaf5e2c7b45ffa1daecfae574b3e3f9c6f1d647e0d5983ad0b07c2225a304e31e8bac05e4396fd67a01a255542954d70012b59f29b992102c46d2bc315316feae3670b60a15ccb795b51a78c3cc37a2b907545f66fd35e316bbf463a1a601dc18824e2e2cb1e7040b8fe081f0fdc978d651c9e5ea61f3b9b7560913a2bd490af8fd0456e8fb5567f343aecaf58e8b21da114b85cddec37aaa1fb5996414c1c1b17a07fb33e744914dd27a4e369aff0ebdaa518ef7f75d7d2337e9d21648be9522afd15bd016db1512dd899cd9ed11390e1c9109474feb890fa3baf646fbfc06165edc0ff2586942059f77fcaebae6a14bfedc345b779e5e19fe3d55f6f38e7f297b612e06d94d78d96b4f2cf554f57a64c4d22120acb26ebbea373959067368cfdc997b648952405cce4ffbecb7b11b08eeb6eef9737f08e88f47b965e32108c2ea50f639c222ceeba4e7b9cf368110a402cef5b70579f24d4fb2571e1154f99cb5dbd5698526156898ad71abb976c884db33acbaed1a926b4b65c43cc1617425716dd27ca9c4f0593221b8d41ceb5a92af2fbfb028871522cc949ba90c4cbf728eae0cedcab5eb639a7bfb695d57fe0a020e7e1f11d4a603655d93d04f84e0b579d3bc473f9546e5cc085838d02cdc191ef7ff38dcdcd45329a648227f2c8ff33e43b36a2d91a5dca56fe0336970091ea0d93c7177647a03d0b238bf9c66faaefe68a446871ce4ab9a2467ce52523f604909a27a102f40fdde05a284d891da05f77a115b183e7c8caf00b1cac6b24417f7eb26ef5e3636abd7b447ced08ab13da29af256c690c04fba741829aa52ca1d3d01944066c4f5f86d2c973a88d8e8a6226606129ebcf07f40b049d38874873a1a06b039de55f41c3bd3a2a9f42d7c83c17e8e459c327e72dffd5195daa484b324fb6de44fd945d73e35b6ccb2759e9cac09ab8c9ef491384ea9fa7f25b823c53c041850b97c4a9da47d52289019839de8a73e0ca78b435a80c40f74285e3ed114a388f1b3a2bb4de3a65eef1bed36fa8f9bf9c0f0ef3a221b51772fe229331682039b441139e6a21bb924d07f5dea8260bb1b56ce9b4cfdde103c1d311aa74de038e6c86a9447517ca7a38396934d531109bc24a7bb891d129356b70d92a71e7cd595d48058f4857ad40f9d062f6f862d08f23675964aad94533322752de57d68d4ded97315d1df9c5194328a85c0a3fc045b38d6eeec45bc6f6d21474a4d9e807727fb8117290b86f35c65abf8030c35d6b17d9444d89710a89a0795d5ecac288b50d3b61ea40dcb00e6a45dc871ffb4268977c06cca45a0f43932da4810a5b9679e0c74c1ecbeea3ad03fbae1d6831c100b03b7cd01454fd860e24f71dc34a30205ba4af1394fd9b5f1eb5c9782388eef2e17228c55da2f6979076f515e412342eae5307b9824b3ce3</script>
+</div>
+<script src="/zyf-42/lib/blog-encrypt.js"></script><link href="/zyf-42/css/blog-encrypt.css" rel="stylesheet" type="text/css"></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">zyf-42</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://gitee.com/zyf-42/zyf-42.git/@reaction-principle/">https://gitee.com/zyf-42/zyf-42.git/@reaction-principle/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://gitee.com/zyf-42/zyf-42.git" target="_blank">zyf-42的小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/zyf-42/tags/%E7%AC%94%E8%AE%B0/">笔记</a><a class="post-meta__tags" href="/zyf-42/tags/%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94%E5%8E%9F%E7%90%86/">化学反应原理</a></div><div class="post_share"><div class="social-share" data-image="/zyf-42/img/12.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wei.png" target="_blank"><img class="post-qr-code-img" data-lazy-src="/zyf-42/img/wei.png" alt="微信支付"/></a><div class="post-qr-code-desc">微信支付</div></li><li class="reward-item"><a href="/img/zhi.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/zyf-42/img/zhi.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" style="background-color: transparent;" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By zyf-42</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">WELCOME TO MY BLOG !</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/zyf-42/js/utils.js"></script><script src="/zyf-42/js/main.js"></script><script src="/zyf-42/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/zyf-42/js/search/local-search.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'WxoHFLrtHTPcpcEA48PpX0Ie-gzGzoHsz',
+      appKey: 'o2nfIC4kmGB66XcX8GQJUkhk',
+      placeholder: '记得留下你的昵称和邮箱....可以快速收到回复（网址为选填）',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="aplayer no-destroy" data-id="605169979" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><script src="/zyf-42/js/third-party/click_heart.js" async="async"></script><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "4e771744-29ac-443b-b0e0-7bd5156c4715";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (true) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  'meta[name=description]',
+  '#config_change',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+const pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+})
+
+document.addEventListener('pjax:complete', function () {
+  refreshFn()
+
+  $('script[data-pjax]').each(function () {
+    $(this).parent().append($(this).remove())
+  })
+
+  GLOBAL_CONFIG.islazyload && lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  if (typeof gtag === 'function') {
+    gtag('config', '', {'page_path': window.location.pathname});
+  }
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+})
+
+document.addEventListener('pjax:send', function () {
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  $(window).off('scroll')
+
+  //reset readmode
+  $('body').hasClass('read-mode') && $('body').removeClass('read-mode')
+
+  //reset font-size
+  $('body').css('font-size') !== originFontSize && $('body').css('font-size', parseFloat(originFontSize))
+})</script></div></body></html><script type="text/javascript" src="/js/crash_cheat.js"></script>
