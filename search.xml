@@ -29,25 +29,6 @@
     
     
     <entry>
-      <title>关于笔记问题的公告与开源</title>
-      <link href="/zyf-42/notice/"/>
-      <url>/zyf-42/notice/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="关于笔记问题的公告与开源"><a href="#关于笔记问题的公告与开源" class="headerlink" title="关于笔记问题的公告与开源"></a>关于笔记问题的公告与开源</h1><p>应版权方要求，笔记内容已全面下架，旧链接已不可用。</p><hr><h1 id="开源"><a href="#开源" class="headerlink" title="开源"></a>开源</h1><p>开源：简单的说，指开放源代码与项目的设计过程，设计思路。由此形成了程序员的开源精神。</p><p>这也是我搭建网站分享内容的原因。本网站全部采用开源代码搭建，在搭建过程中受到很多人不同形式的帮助。可能是开源的文档，可能是亲自的指导，无数的程序员用自己的努力无偿地帮助了很多人，而我也立志成为开源阵营的一员，本网站源代码及笔记源代码同样在gitee开放。</p><p>俗话说：“隔行如隔山”。与其他行业不同，因开源精神的存在，IT这个并没有其他行业那样的知识壁垒，大家一起学习，一起进步，不断提升技术，立志改变世界。刚刚过去10月24日是程序员的节日，仅以此篇纪念这一天。愿开源精神与你同在。</p><hr><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>本站为AC工作室的教程站之一，以后会更多地更新制作方面的内容，有兴趣的同学可以来AC看一下。<br>QQ群号：<a href="https://jq.qq.com/?_wv=1027&k=ALpI4lTp">545773956</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 公告 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>hexo之butterfly魔改记录</title>
       <link href="/zyf-42/hexo-butterfly/"/>
       <url>/zyf-42/hexo-butterfly/</url>

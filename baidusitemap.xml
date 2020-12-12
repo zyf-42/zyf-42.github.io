@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/hexo/</loc>
-    <lastmod>2020-11-14</lastmod>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/geek/</loc>
+    <lastmod>2020-12-12</lastmod>
   </url>
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/notice/</loc>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/hexo/</loc>
     <lastmod>2020-11-14</lastmod>
   </url>
   <url>
@@ -54,10 +54,6 @@
   </url>
   <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/audio-mixing-4/</loc>
-    <lastmod>2020-10-24</lastmod>
-  </url>
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/zyf-42/geek/</loc>
     <lastmod>2020-10-24</lastmod>
   </url>
 </urlset> 
