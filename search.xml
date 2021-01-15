@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Python笔记（也是教程）</title>
+      <link href="/zyf-42/Python/"/>
+      <url>/zyf-42/Python/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Python笔记"><a href="#Python笔记" class="headerlink" title="Python笔记"></a>Python笔记</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>python作为一种解释型语言，有以下优点：<br>简单易学；代码库完善（第三方库也是）；跨平台等等<br>有以下常见应用：<br>网络应用，包括网站、后台服务;日常需要的小工具;包装其他语言；人工智能等等<br>有以下常见缺点：<br>运行速度慢、代码不能加密等等<br>适合小白初学，但个人建议另学其他内容。</p><hr><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>python下载：<a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a><br>Anaconda下载：<a href="https://www.anaconda.com/products/individual#macos">https://www.anaconda.com/products/individual#macos</a></p><ol><li>下载完成后</li><li>点击exe运行</li><li>跳出安装界面，点上<strong>Add Python 3.8 to PATH</strong></li><li>安装Anaconda</li></ol><hr><h2 id="输入、输出"><a href="#输入、输出" class="headerlink" title="输入、输出"></a>输入、输出</h2><h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#输出语句：</span></span><br><span class="line">print(<span class="string">&#x27;hello,world&#x27;</span>)<span class="comment">#字符串</span></span><br><span class="line">print(<span class="string">&#x27;hello&#x27;</span>,<span class="string">&#x27;world&#x27;</span>)<span class="comment">#两个字符串之间用逗号</span></span><br><span class="line">print(<span class="number">200</span>)<span class="comment">#数字</span></span><br><span class="line">print(<span class="number">100</span>+<span class="number">200</span>)<span class="comment">#运算结果</span></span><br><span class="line">print(<span class="string">&#x27;100+100=&#x27;</span>,<span class="number">100</span>+<span class="number">100</span>)<span class="comment">#字符串，运算结果</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#运行结果：</span></span><br><span class="line">hello,world</span><br><span class="line">hello world</span><br><span class="line"><span class="number">200</span></span><br><span class="line"><span class="number">300</span></span><br><span class="line"><span class="number">100</span>+<span class="number">100</span>= <span class="number">200</span></span><br></pre></td></tr></table></figure><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#输入语句：这里我们使用了一个名为name的变量</span></span><br><span class="line">name = input(<span class="string">&#x27;please enter your name: &#x27;</span>) <span class="comment">#等号前后并不一定需要空格，但这是一种良好的代码习惯，无用的空格在代码运行时不会产生影响</span></span><br><span class="line"><span class="comment">#输入Tom</span></span><br><span class="line">print(name)</span><br><span class="line">print(<span class="string">&#x27;hello&#x27;</span>,name)</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#运行结果</span></span><br><span class="line"><span class="comment">#首先打印input（）内的字符串</span></span><br><span class="line">please enter your name: </span><br><span class="line"><span class="comment">#输入Tom</span></span><br><span class="line">Tom</span><br><span class="line">hello Tom</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo个人博客搭建教程</title>
       <link href="/zyf-42/hexo/"/>
       <url>/zyf-42/hexo/</url>
@@ -73,6 +98,33 @@
         <tags>
             
             <tag> 编程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>高中化学反应原理</title>
+      <link href="/zyf-42/@reaction-principle/"/>
+      <url>/zyf-42/@reaction-principle/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="高中化学反应原理"><a href="#高中化学反应原理" class="headerlink" title="高中化学反应原理"></a>高中化学反应原理</h1><h2 id="反应热与焓变、热化学方程式、过渡态理论、盖斯定理"><a href="#反应热与焓变、热化学方程式、过渡态理论、盖斯定理" class="headerlink" title="反应热与焓变、热化学方程式、过渡态理论、盖斯定理"></a>反应热与焓变、热化学方程式、过渡态理论、盖斯定理</h2><img src= "/zyf-42/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/11/gdAQao568hOCF4r.jpg" width="70%" height="70%"><hr><h2 id="热值、中和热、原电池"><a href="#热值、中和热、原电池" class="headerlink" title="热值、中和热、原电池"></a>热值、中和热、原电池</h2><img src= "/zyf-42/img/loading.gif" data-lazy-src="https://i.loli.net/2020/10/17/cQli1L3KTSD4p7v.jpg" width="70%" height="70%">]]></content>
+      
+      
+      <categories>
+          
+          <category> 高考 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+            <tag> 化学反应原理 </tag>
             
         </tags>
       
