@@ -1,112 +1,318 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>zyf-42的小站 - a place filled of love</title><meta name="description" content="一个极客的日常生活"><meta name="keywords" content="music 、 literature and technology"><meta name="author" content="zyf-42"><meta name="copyright" content="zyf-42"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/zyf-42/img/tou.jpg"><link rel="canonical" href="https://gitee.com/zyf-42/zyf-42.git/page/2/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="zyf-42的小站"><meta property="og:url" content="https://gitee.com/zyf-42/zyf-42.git/page/2/"><meta property="og:site_name" content="zyf-42的小站"><meta property="og:description" content="一个极客的日常生活"><meta property="og:image" content="https://gitee.com/zyf-42/zyf-42.git/img/tou.jpg"><meta property="article:published_time" content="2021-01-17T08:17:59.798Z"><meta property="article:modified_time" content="2021-01-17T08:17:59.798Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
-  }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
-  }
-}
-
-var getCookies = function (name) {
-  const value = `; ${document.cookie}`
-  const parts = value.split(`; ${name}=`)
-  if (parts.length === 2) return parts.pop().split(';').shift()
-}
-
-var autoChangeMode = 'false'
-var t = getCookies('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-    }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (Cookies.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
-      }
-    })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/zyf-42/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>zyf-42的小站 - a place filled of love</title><meta name="keywords" content="music 、 literature and technology"><meta name="author" content="zyf-42"><meta name="copyright" content="zyf-42"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="一个极客的日常生活">
+<meta property="og:type" content="website">
+<meta property="og:title" content="zyf-42的小站">
+<meta property="og:url" content="https://gitee.com/zyf-42/zyf-42.git/page/2/index.html">
+<meta property="og:site_name" content="zyf-42的小站">
+<meta property="og:description" content="一个极客的日常生活">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/zyf-42/zyf-42.git/img/tou.jpg">
+<meta property="article:author" content="zyf-42">
+<meta property="article:tag" content="music 、 literature and technology">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/zyf-42/zyf-42.git/img/tou.jpg"><link rel="shortcut icon" href="/zyf-42/img/tou.png"><link rel="canonical" href="https://gitee.com/zyf-42/zyf-42.git/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/zyf-42/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
   root: '/zyf-42/',
-  hexoversion: '5.0.1',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
   noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
   copy: {
     success: '复制成功',
     error: '复制错误',
     noSupport: '浏览器不支持'
   },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
+  relativeDate: {
+    homepage: false,
+    post: false
   },
-  runtime_unit: '天',
-  runtime: true,
-  copyright: {"limitCount":50,"languages":{"author":"作者: zyf-42","link":"链接: ","source":"来源: zyf-42的小站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
   },
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
   isPhotoFigcaption: false,
   islazyload: true,
-  isanchor: true    
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
-  isSidebar: false,
-  postUpdate: '2021-01-17 16:17:59'
-}</script><noscript><style>
-#nav {
-  opacity: 1
-}
-.justified-gallery img {
-  opacity: 1
-}
-</style></noscript><style type="text/css">#toggle-sidebar {bottom: 80px}</style><meta name="generator" content="Hexo 5.0.1"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/zyf-42/img/tou.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/zyf-42/archives/"><div class="headline">文章</div><div class="length_num">16</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/zyf-42/tags/"><div class="headline">标签</div><div class="length_num">18</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/zyf-42/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/zyf-42/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/guestbook/"><i class="fa-fw far fa-edit"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/bangumis/"><i class="fa-fw fa-fw fas fa-list"></i><span> 追番</span></a></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><header class="full_page" id="page-header" style="background-image: url(/zyf-42/img/3.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/zyf-42/">zyf-42的小站</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/zyf-42/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/guestbook/"><i class="fa-fw far fa-edit"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/bangumis/"><i class="fa-fw fa-fw fas fa-list"></i><span> 追番</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">zyf-42的小站</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://gitee.com/zyf-42" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zyf1253607602@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/zyf-42/book-recommend-1/" title="【专栏：好书推荐】川端康成 《古都》">     <img class="post_bg" data-lazy-src="/zyf-42/img/1.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：好书推荐】川端康成 《古都》"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/book-recommend-1/" title="【专栏：好书推荐】川端康成 《古都》">【专栏：好书推荐】川端康成 《古都》</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-23T07:12:40.000Z" title="发表于 2020-08-23 15:12:40">2020-08-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%96%87%E5%AD%A6/">文学</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/zyf-42/tags/%E4%B9%A6%E8%AF%84/">书评</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/zyf-42/tags/%E5%A5%BD%E4%B9%A6%E6%8E%A8%E8%8D%90/">好书推荐</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/zyf-42/tags/%E9%98%85%E8%AF%BB/">阅读</a></span></div><div class="content">人就像是上帝的孩子，先遗弃再来拯救。</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/zyf-42/audio-mixing-4/" title="【专栏：音频】混音之包络线篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】混音之包络线篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/audio-mixing-4/" title="【专栏：音频】混音之包络线篇">【专栏：音频】混音之包络线篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-22T11:39:29.000Z" title="发表于 2020-08-22 19:39:29">2020-08-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/">音乐制作</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/">音频后期</a></span></div><div class="content">包络线向来是混音中极其重要的一环，但b站关于包络线的视频教程却少的可怜。希望在学习过后，读者能系统地控制声音的动态变化，为您的混音添上画龙点睛之笔。注：内附部分母带内容，帮助读者初步了解母带</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/zyf-42/audio-mixing-3/" title="【专栏：音频】混音之混响、压缩篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】混音之混响、压缩篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/audio-mixing-3/" title="【专栏：音频】混音之混响、压缩篇">【专栏：音频】混音之混响、压缩篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-22T11:23:17.000Z" title="发表于 2020-08-22 19:23:17">2020-08-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/">音乐制作</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/">音频后期</a></span></div><div class="content">混音和压缩被单独拿出来成一章，是因为其类型多样的特殊性。故教程只包含两种效果器的一般使用方法。希望在对这两种效果器有深入了解后，读者能拥有自行研究混响和压缩的能力，并以此创造出更具有空间感、立体感和动态好听的声音。</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/zyf-42/audio-mixing-2/" title="【专栏：音频】混音之EQ篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】混音之EQ篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/audio-mixing-2/" title="【专栏：音频】混音之EQ篇">【专栏：音频】混音之EQ篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-22T11:22:57.000Z" title="发表于 2020-08-22 19:22:57">2020-08-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/">音乐制作</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/">音频后期</a></span></div><div class="content">一EQ作为及其有用的一种效果器，在混音中承担着改变声音远近层次和优化音色的重要作用。希望读者在学习过后对混音或音频后期处理时能正确地使用EQ，获得完美的声音。</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/zyf-42/audio-mixing-1/" title="【专栏：音频】混音之基础认识篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】混音之基础认识篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/audio-mixing-1/" title="【专栏：音频】混音之基础认识篇">【专栏：音频】混音之基础认识篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-22T11:22:40.000Z" title="发表于 2020-08-22 19:22:40">2020-08-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/">音乐制作</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/">音频后期</a></span></div><div class="content">学习本章，有助于帮助小白快速了解混音。从混音的定义、目的和所需的工具开始进行讲解。希望读者可以构建一个完美的混音初认识</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/zyf-42/sound-recording/" title="【专栏：音频】番外之录音篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】番外之录音篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/sound-recording/" title="【专栏：音频】番外之录音篇">【专栏：音频】番外之录音篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-10T07:24:39.000Z" title="发表于 2020-08-10 15:24:39">2020-08-10</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag article-meta__icon"></i><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/">音乐制作</a><span class="article-meta__link">•</span><a class="article-meta__tags" href="/zyf-42/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/">音频后期</a></span></div><div class="content">一篇浅显易懂的录音教程，让你简单直观一天学会一般性的录音技巧。</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/zyf-42/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/zyf-42/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/zyf-42/img/tou.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">zyf-42</div><div class="author-info__description">一个极客的日常生活</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/zyf-42/archives"><div class="headline">文章</div><div class="length_num">16</div></a></div><div class="card-info-data-item is-center">      <a href="/zyf-42/tags"><div class="headline">标签</div><div class="length_num">18</div></a></div><div class="card-info-data-item is-center"><a href="/zyf-42/categories"><div class="headline">分类</div><div class="length_num">6</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://gitee.com/zyf-42"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/zyf-42" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zyf1253607602@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content"></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/zyf-42/Python/" title="Python笔记（也是教程）"><img class="aside-post-bg" data-lazy-src="/zyf-42/img/17.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="Python笔记（也是教程）"/></a><div class="aside-post-info"><a class="aside-post-title" href="/zyf-42/Python/" title="Python笔记（也是教程）">Python笔记（也是教程）</a><time class="aside-post_meta post-meta-date" datetime="2021-01-09T13:50:03.000Z" title="发表于 2021-01-09 21:50:03">2021-01-09</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/zyf-42/hexo/" title="hexo个人博客搭建教程"><img class="aside-post-bg" data-lazy-src="/zyf-42/img/16.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="hexo个人博客搭建教程"/></a><div class="aside-post-info"><a class="aside-post-title" href="/zyf-42/hexo/" title="hexo个人博客搭建教程">hexo个人博客搭建教程</a><time class="aside-post_meta post-meta-date" datetime="2020-11-14T13:04:58.000Z" title="发表于 2020-11-14 21:04:58">2020-11-14</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/zyf-42/hexo-butterfly/" title="hexo之butterfly魔改记录"><img class="aside-post-bg" data-lazy-src="/zyf-42/img/14.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="hexo之butterfly魔改记录"/></a><div class="aside-post-info"><a class="aside-post-title" href="/zyf-42/hexo-butterfly/" title="hexo之butterfly魔改记录">hexo之butterfly魔改记录</a><time class="aside-post_meta post-meta-date" datetime="2020-10-24T11:57:37.000Z" title="发表于 2020-10-24 19:57:37">2020-10-24</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/zyf-42/c++/" title="c++笔记"><img class="aside-post-bg" data-lazy-src="/zyf-42/img/13.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="c++笔记"/></a><div class="aside-post-info"><a class="aside-post-title" href="/zyf-42/c++/" title="c++笔记">c++笔记</a><time class="aside-post_meta post-meta-date" datetime="2020-10-10T13:11:41.000Z" title="发表于 2020-10-10 21:11:41">2020-10-10</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/zyf-42/@reaction-principle/" title="高中化学反应原理"><img class="aside-post-bg" data-lazy-src="/zyf-42/img/12.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="高中化学反应原理"/></a><div class="aside-post-info"><a class="aside-post-title" href="/zyf-42/@reaction-principle/" title="高中化学反应原理">高中化学反应原理</a><time class="aside-post_meta post-meta-date" datetime="2020-10-10T11:10:50.000Z" title="发表于 2020-10-10 19:10:50">2020-10-10</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+  isToc: false,
+  postUpdate: '2021-01-22 14:41:22'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}const fontSizeVal = saveToLocal.get('global-font-size')
+if (fontSizeVal !== undefined) {
+  document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+}})()</script><style type="text/css">#toggle-sidebar {bottom: 80px}</style><meta name="generator" content="Hexo 5.0.1"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" data-lazy-src="/zyf-42/img/tou.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/zyf-42/archives/"><div class="headline">文章</div><div class="length-num">16</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/zyf-42/tags/"><div class="headline">标签</div><div class="length-num">18</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/zyf-42/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/zyf-42/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/guestbook/"><i class="fa-fw far fa-edit"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/bangumis/"><i class="fa-fw fa-fw fas fa-list"></i><span> 追番</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/zyf-42/img/3.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/zyf-42/">zyf-42的小站</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/zyf-42/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/guestbook/"><i class="fa-fw far fa-edit"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/link/"><i class="fa-fw fas fa-link"></i><span> 友人帐</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/zyf-42/bangumis/"><i class="fa-fw fa-fw fas fa-list"></i><span> 追番</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">zyf-42的小站</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://gitee.com/zyf-42" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zyf1253607602@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/zyf-42/book-recommend-1/" title="【专栏：好书推荐】川端康成 《古都》">     <img class="post_bg" data-lazy-src="/zyf-42/img/1.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：好书推荐】川端康成 《古都》"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/book-recommend-1/" title="【专栏：好书推荐】川端康成 《古都》">【专栏：好书推荐】川端康成 《古都》</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-23T07:12:40.000Z" title="发表于 2020-08-23 15:12:40">2020-08-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%96%87%E5%AD%A6/">文学</a></span></div><div class="content">《古都》作者：川端康成书评寂寞的文字，悠久的内心!
+
+阅读因一些原因，第五章目前缺少。
+第二章第三章第四章第六章第七章第八章第九章第二章：尼姑庵与格子门
+千重子的父亲佐田太吉郎在三四天以前就躲到坐落在嵯峨山中的尼姑庵里。
+虽说是尼姑庵，可是庵主已年过六十五了。在古都，这小小的尼姑庵也自有它的掌故。但庵门掩没在竹林丛中，看不见了。这庵几乎与观光游览无缘，显得冷冷清清的。顶多有间厢房偶尔供举办茶道会使用。而且也不是什么有名的茶室。庵主经常外出教人插花。
+佐田太吉郎租了一间尼姑庵的房子，现在他大概对这个尼姑庵的生活也习惯了吧。
+佐田的店铺好歹是中京[^4]的一家绸缎批发店。周围的店铺大都改为股份公司了。佐田的店铺也跟他们一样，形式上是家股份公司。太吉郎当然是担任经理，不过买卖都由掌柜（如今改为专务或常务）掌管。但是，现在多少还保留着昔日店铺的老规矩。
+太吉郎打年轻时起就有名士气质。而且比较孤僻。他完全没有要举办个人染织作品展览的雄心。就算举办了，在那个时候，恐怕也会过于新奇而难以卖得出去。
+太吉郎的父亲太吉兵卫，生前常常偷偷观察太吉郎作画。太吉郎没有像公司内的图案专家或公司外画家那样画些时兴 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/zyf-42/audio-mixing-4/" title="【专栏：音频】混音之包络线篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】混音之包络线篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/audio-mixing-4/" title="【专栏：音频】混音之包络线篇">【专栏：音频】混音之包络线篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-22T11:39:29.000Z" title="发表于 2020-08-22 19:39:29">2020-08-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">混音之包络线篇8、包络线音乐情绪六大元素：
+旋律，和声，织体，速度，节奏，力度我们画包络线是为了控制它的力度（反馈到听觉，一定范围内等于响度）力度原则：避让主声部、配合主声部
+
+
+音乐整体情绪的四种段落：安静段落、松弛段落、高潮段落、极限段落安静段落的特点：
+1、人声作为音乐情绪的主导作用2、其他乐器只是起到铺垫的作用（即配合人声）3、乐器声部集中在中频、中低频的附近
+
+松驰段落的特点：
+1、中高频的乐器开始出现；2、低频开始向下延展（底鼓、贝司）；3、整个音乐的频率开始向上向下扩展开；4、人声仍然作为情绪的主导，其他乐器开始对人声有辅助推动作用。
+
+高潮段落的特点：
+1、高频乐器的演奏频率增加；2、出现一些空间频率填充性乐器（伴唱、弦乐）；3、人声不再作为情绪的主导，而是整个乐队共同将音乐推向高潮。
+
+极限段落的特点；
+1、所有高频乐器的演奏频率进一步加强；2、部分乐器的演奏法开始出现改变（如贝斯向上）；3、整个音乐变得热闹。
+
+
+乐器的情绪处理:你在画音乐情绪的时候，你实际上充当了乐队指挥的角色，要安排每一个乐器声部的情绪，每一个声部音量的大小。
+节奏乐器：
+1、底鼓不做情绪。2、 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/zyf-42/audio-mixing-3/" title="【专栏：音频】混音之混响、压缩篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】混音之混响、压缩篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/audio-mixing-3/" title="【专栏：音频】混音之混响、压缩篇">【专栏：音频】混音之混响、压缩篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-22T11:23:17.000Z" title="发表于 2020-08-22 19:23:17">2020-08-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">混音之混响压缩篇人声修正器可以修正音高、节奏和降噪。修音太烦了，一般不跑调太厉害不建议去修，请自学！！！
+
+修节奏千万不要使用扭曲音轨！！！
+
+参考资料：注：此系列教程附有iZotope RX 7 Audio Editor降噪和对轨的教程内容（必学）！！！
+前往观看
+
+
+压缩作用：控制声音的动态或改变声音的音色！1控制声音的动态2美化声音
+参数：
+启动时间 : Attack （启动时间是人为设定的。当输入电平大于阀值时，压缩器从1:1无压缩状态过度到设定的压缩比所需要的时间。输入电平一定要大于阀值压缩器才会启动启动时间就是压缩器改变压缩比的时间。即过度所需的时间。）释放时间 : Release （释放时间是当输入电平自上而下低于阀值的时候压缩器从设定好的压缩比回到1:1无压缩状态所用的时间也是人为设定的。）压缩比 : Rario （配音一般4:1就好）阀值 ： Thresh （当输入电平达到某一个电平的时候压缩器开始工作这个电平就是我们设置的阀值）
+
+压缩器工作状态1 无压缩状态2 启动过程3 稳态压缩过程4 释放过程
+参考资料：人声处理之如何调压缩器 前往观看
+压缩器参数 前往观看
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/zyf-42/audio-mixing-2/" title="【专栏：音频】混音之EQ篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】混音之EQ篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/audio-mixing-2/" title="【专栏：音频】混音之EQ篇">【专栏：音频】混音之EQ篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-22T11:22:57.000Z" title="发表于 2020-08-22 19:22:57">2020-08-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">混音之EQ篇EQ、滤波器
+EQ又称均衡器，是音频效果器的一种，主要用于控制音频不同频段的输出音量的大小
+
+EQ的作用:
+修正声音的问题
+标准：客观、在相同响度下对比原则：和谐、好听、减少突兀的东西
+
+
+决定声音的远近层次
+美化声音
+
+
+EQ的操作:
+EQ扫频，Q值通过增大收窄，提升频率，扫动所有频率，找到问题
+将频率solo出来单独听
+增幅
+降幅
+高切
+作用：切掉一部分空气声原因：空气声是专属于人声的频段，太多乐器抢了这个频段，人声甜美度、清晰度下降
+
+
+低切
+作用：减少声音的臃肿、拖沓，使得声音更有力度原因：有更多的超低频时声音会更加松软，而非有力
+
+
+高通
+低通
+
+
+使用EQ的注意点:
+
+能用衰减EQ解决的问题，绝不用提升；衰减特色频率点
+同等响度下最公正的对比声音
+衰减有时候会使得频率更加清晰有力。有力并非都要堆砌在同一频段。剪掉不需要的频段，低频反而会更加清晰有力
+
+
+
+EQ频率认识20-80超低频
+
+超低频（使声音松弛）需要衰减
+
+80-250低频
+250-800中低频
+
+中低频对歌曲的温暖度和清晰度有影响（二者互补）提升中低频提升温暖度下降清晰度衰减中低频温暖度下降清晰度提 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/zyf-42/audio-mixing-1/" title="【专栏：音频】混音之基础认识篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】混音之基础认识篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/audio-mixing-1/" title="【专栏：音频】混音之基础认识篇">【专栏：音频】混音之基础认识篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-22T11:22:40.000Z" title="发表于 2020-08-22 19:22:40">2020-08-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">混音之基础认识篇1、基本概念今天我们来讲讲混音是什么？
+你在b站的音乐区经常看见b站编曲的分轨作品流出，而混音就是把这些分轨混合在一起。混音是很创造性的工作，没有什么刻板的东西。一般的制作步骤为整理分轨，对齐分轨，（修音，不是必要的），添加效果器。
+参考资料：混音需要的基本素养 前往观看
+
+2、混音需要什么？混音师需要的大致可分类为软件和硬件。
+软件有DAW（数字音频工作站）。目前主流的DAW有studio one、Cubase和Pro tools。（如果你喜欢FL studio或AU也可以）。软件的优势在于制作的声音清楚且精细，我们后期也将使用软件进行教学。
+硬件有调音台，声卡和各种效果器，都是模拟信号，主要用于音响设置。硬件的好处是做出来的音乐有特殊的音色，但缺点是模拟信号的声音很容易在电路中变得模糊不清。
+参考资料:数字音频工作站  前往观看
+波形&amp;相位 前往观看
+科学的抬杠——再谈采样频率1 前往观看
+科学的抬杠——再谈采样频率2 前往观看
+
+3、效果器具体有哪些？效果器一般有：EQ（频率均衡器）、混响器、延迟器、压缩器、门限器、限制器
+下面我们来具体聊一聊这些效果器（ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/zyf-42/sound-recording/" title="【专栏：音频】番外之录音篇">     <img class="post_bg" data-lazy-src="/zyf-42/img/4.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="【专栏：音频】番外之录音篇"></a></div><div class="recent-post-info"><a class="article-title" href="/zyf-42/sound-recording/" title="【专栏：音频】番外之录音篇">【专栏：音频】番外之录音篇</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-10T07:24:39.000Z" title="发表于 2020-08-10 15:24:39">2020-08-10</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/">教程</a></span></div><div class="content">录音注意事项
+1、电脑请使用daw数字音频工作站，连接声卡和录音设备（推荐）
+
+
+2、手机请记得设置成MP3格式（不推荐！！！）
+
+
+3、录音时请不要离麦克风太近以减少齿音和口水音，并控制音量大小避免出现爆音的情况
+
+
+4、录音时请注意录制！干声！干声！干声!重要的事情说三遍。干声，又叫裸声，属于音频术语，一般指录音以后未经过任何后期处理和加工的纯人声
+
+
+5、录音条件，即设备，环境，CV自身的声音状况等。至少应有独立声卡，麦克，环境最好安静
+
+
+6、关于降噪，如无条件在安静环境中录音，请使用软件进行降噪处理，此处推荐iZotope RX 7 Audio Editor（但是！无论什么软件都会对音频文件产生损坏）
+
+
+7、关于音频的后期处理，以eq衰减为主，不建议进行过多处理
+
+
+声音的降噪软件请使用iZotope RX 7 Audio Editor
+此软件可以实现降噪以及人声与伴奏的相互提取！！！
+
+教程参考：
+音律屋《最强音频修复软件 RX7 使用教程》（已更新至RX8）
+
+
+
+
+人声让位为什么要做人声让位？
+使人声与伴奏更好的协调，并不是减少伴奏的音量，不让伴奏盖过甚至抵消人声，这 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/zyf-42/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/zyf-42/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/zyf-42/img/tou.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">zyf-42</div><div class="author-info__description">一个极客的日常生活</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/zyf-42/archives/"><div class="headline">文章</div><div class="length-num">16</div></a></div><div class="card-info-data-item is-center"><a href="/zyf-42/tags/"><div class="headline">标签</div><div class="length-num">18</div></a></div><div class="card-info-data-item is-center"><a href="/zyf-42/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><a class="button--animated" id="card-info-btn" href="https://gitee.com/zyf-42"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/zyf-42" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zyf1253607602@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/zyf-42/Python/" title="Python笔记（也是教程）"><img data-lazy-src="/zyf-42/img/17.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="Python笔记（也是教程）"/></a><div class="content"><a class="title" href="/zyf-42/Python/" title="Python笔记（也是教程）">Python笔记（也是教程）</a><time datetime="2021-01-09T13:50:03.000Z" title="发表于 2021-01-09 21:50:03">2021-01-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/zyf-42/hexo/" title="hexo个人博客搭建教程"><img data-lazy-src="/zyf-42/img/16.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="hexo个人博客搭建教程"/></a><div class="content"><a class="title" href="/zyf-42/hexo/" title="hexo个人博客搭建教程">hexo个人博客搭建教程</a><time datetime="2020-11-14T13:04:58.000Z" title="发表于 2020-11-14 21:04:58">2020-11-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/zyf-42/hexo-butterfly/" title="hexo之butterfly魔改记录"><img data-lazy-src="/zyf-42/img/14.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="hexo之butterfly魔改记录"/></a><div class="content"><a class="title" href="/zyf-42/hexo-butterfly/" title="hexo之butterfly魔改记录">hexo之butterfly魔改记录</a><time datetime="2020-10-24T11:57:37.000Z" title="发表于 2020-10-24 19:57:37">2020-10-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/zyf-42/c++/" title="c++笔记"><img data-lazy-src="/zyf-42/img/13.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="c++笔记"/></a><div class="content"><a class="title" href="/zyf-42/c++/" title="c++笔记">c++笔记</a><time datetime="2020-10-10T13:11:41.000Z" title="发表于 2020-10-10 21:11:41">2020-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/zyf-42/@reaction-principle/" title="高中化学反应原理"><img data-lazy-src="/zyf-42/img/12.jpg" onerror="this.onerror=null;this.src='/zyf-42/img/404.jpg'" alt="高中化学反应原理"/></a><div class="content"><a class="title" href="/zyf-42/@reaction-principle/" title="高中化学反应原理">高中化学反应原理</a><time datetime="2020-10-10T11:10:50.000Z" title="发表于 2020-10-10 19:10:50">2020-10-10</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/zyf-42/categories/%E5%88%B6%E4%BD%9C/"><span class="card-category-list-name">制作</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/zyf-42/categories/%E5%BC%80%E5%8F%91/"><span class="card-category-list-name">开发</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/zyf-42/categories/%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">教程</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/zyf-42/categories/%E6%96%87%E5%AD%A6/"><span class="card-category-list-name">文学</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/zyf-42/categories/%E7%A7%91%E6%8A%80/"><span class="card-category-list-name">科技</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/zyf-42/categories/%E9%AB%98%E8%80%83/"><span class="card-category-list-name">高考</span><span class="card-category-list-count">1</span></a></li>
-                       
-            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/zyf-42/tags/hexo/" style="font-size: 16px; color: #999">hexo</a> <a href="/zyf-42/tags/%E4%B9%A6%E8%AF%84/" style="font-size: 20px; color: #99a4b2">书评</a> <a href="/zyf-42/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/" style="font-size: 16px; color: #999">使用手册</a> <a href="/zyf-42/tags/%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94%E5%8E%9F%E7%90%86/" style="font-size: 16px; color: #999">化学反应原理</a> <a href="/zyf-42/tags/%E5%A5%BD%E4%B9%A6%E6%8E%A8%E8%8D%90/" style="font-size: 20px; color: #99a4b2">好书推荐</a> <a href="/zyf-42/tags/%E5%BC%80%E5%8F%91/" style="font-size: 16px; color: #999">开发</a> <a href="/zyf-42/tags/%E6%95%99%E5%AD%A6/" style="font-size: 16px; color: #999">教学</a> <a href="/zyf-42/tags/%E6%9E%81%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 16px; color: #999">极客日常</a> <a href="/zyf-42/tags/%E7%A7%91%E6%8A%80/" style="font-size: 16px; color: #999">科技</a> <a href="/zyf-42/tags/%E7%A7%91%E6%8A%80%E6%96%87%E5%8C%96/" style="font-size: 16px; color: #999">科技文化</a> <a href="/zyf-42/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 16px; color: #999">笔记</a> <a href="/zyf-42/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 18px; color: #999ea6">编程</a> <a href="/zyf-42/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 16px; color: #999">网站搭建</a> <a href="/zyf-42/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/" style="font-size: 16px; color: #999">视频制作</a> <a href="/zyf-42/tags/%E9%98%85%E8%AF%BB/" style="font-size: 20px; color: #99a4b2">阅读</a> <a href="/zyf-42/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 22px; color: #99a9bf">音乐制作</a> <a href="/zyf-42/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/" style="font-size: 22px; color: #99a9bf">音频后期</a> <a href="/zyf-42/tags/%E9%AD%94%E6%94%B9/" style="font-size: 16px; color: #999">魔改</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">9</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">16</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count">     </div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" style="background-color: transparent;" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By zyf-42</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">WELCOME TO MY BLOG !</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
- <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/zyf-42/js/utils.js"></script><script src="/zyf-42/js/main.js"></script><script src="/zyf-42/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/zyf-42/js/search/local-search.js"></script><script>var endLoading = function () {
-  document.body.style.overflow = 'auto';
-  document.getElementById('loading-box').classList.add("loaded")
+            
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/zyf-42/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a> <a href="/zyf-42/tags/%E4%B9%A6%E8%AF%84/" style="font-size: 1.37em; color: #99a4b2">书评</a> <a href="/zyf-42/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/" style="font-size: 1.1em; color: #999">使用手册</a> <a href="/zyf-42/tags/%E5%8C%96%E5%AD%A6%E5%8F%8D%E5%BA%94%E5%8E%9F%E7%90%86/" style="font-size: 1.1em; color: #999">化学反应原理</a> <a href="/zyf-42/tags/%E5%A5%BD%E4%B9%A6%E6%8E%A8%E8%8D%90/" style="font-size: 1.37em; color: #99a4b2">好书推荐</a> <a href="/zyf-42/tags/%E5%BC%80%E5%8F%91/" style="font-size: 1.1em; color: #999">开发</a> <a href="/zyf-42/tags/%E6%95%99%E5%AD%A6/" style="font-size: 1.1em; color: #999">教学</a> <a href="/zyf-42/tags/%E6%9E%81%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 1.1em; color: #999">极客日常</a> <a href="/zyf-42/tags/%E7%A7%91%E6%8A%80/" style="font-size: 1.1em; color: #999">科技</a> <a href="/zyf-42/tags/%E7%A7%91%E6%8A%80%E6%96%87%E5%8C%96/" style="font-size: 1.1em; color: #999">科技文化</a> <a href="/zyf-42/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">笔记</a> <a href="/zyf-42/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 1.23em; color: #999ea6">编程</a> <a href="/zyf-42/tags/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" style="font-size: 1.1em; color: #999">网站搭建</a> <a href="/zyf-42/tags/%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C/" style="font-size: 1.1em; color: #999">视频制作</a> <a href="/zyf-42/tags/%E9%98%85%E8%AF%BB/" style="font-size: 1.37em; color: #99a4b2">阅读</a> <a href="/zyf-42/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/" style="font-size: 1.5em; color: #99a9bf">音乐制作</a> <a href="/zyf-42/tags/%E9%9F%B3%E9%A2%91%E5%90%8E%E6%9C%9F/" style="font-size: 1.5em; color: #99a9bf">音频后期</a> <a href="/zyf-42/tags/%E9%AD%94%E6%94%B9/" style="font-size: 1.1em; color: #999">魔改</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/zyf-42/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">9</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">16</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2021-01-22T06:41:22.222Z"></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-01-22T06:41:22.222Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By zyf-42</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/zyf-42/js/utils.js"></script><script src="/zyf-42/js/main.js"></script><script src="/zyf-42/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/zyf-42/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
 }
-window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>function subtitleType () {
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>function subtitleType () {
   if (true) { 
     var typed = new Typed("#subtitle", {
       strings: "Until the Moss had reached our lips-,And covered up - our names -".split(","),
@@ -121,24 +327,19 @@ window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>
 }
 
 if (true) {
-  if (typeof Typed === 'function') subtitleType()
-  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
 } else {
   subtitleType()
-}</script><script>if (document.getElementsByClassName('mermaid').length) {
-  if (window.mermaidJsLoad) mermaid.init()
-  else {
-    $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function () {
-      window.mermaidJsLoad = true
-      mermaid.initialize({
-        theme: 'default',
-      })
-      true && mermaid.init()
-    })
-  }
-}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="aplayer no-destroy" data-id="605169979" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/zyf-42/js/third-party/fireworks.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div class="aplayer no-destroy" data-id="605169979" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
   'title',
-  'meta[name=description]',
   '#config_change',
   '#body-wrap',
   '#rightside-config-hide',
@@ -150,20 +351,26 @@ if (false) {
   pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
 }
 
-const pjax = new Pjax({
+var pjax = new Pjax({
   elements: 'a:not([target="_blank"])',
   selectors: pjaxSelectors,
   cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
 })
 
 document.addEventListener('pjax:complete', function () {
-  refreshFn()
+  window.refreshFn()
 
-  $('script[data-pjax]').each(function () {
-    $(this).parent().append($(this).remove())
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
   })
 
-  GLOBAL_CONFIG.islazyload && lazyLoadInstance.update()
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
 
   typeof chatBtnFn === 'function' && chatBtnFn()
   typeof panguInit === 'function' && panguInit()
@@ -174,9 +381,21 @@ document.addEventListener('pjax:complete', function () {
 
   typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
 
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
 })
 
+
 document.addEventListener('pjax:send', function () {
+  typeof preloader === 'object' && preloader.initLoading()
+  
   if (window.aplayers) {
     for (let i = 0; i < window.aplayers.length; i++) {
       if (!window.aplayers[i].options.fixed) {
@@ -187,11 +406,8 @@ document.addEventListener('pjax:send', function () {
 
   typeof typed === 'object' && typed.destroy()
 
-  $(window).off('scroll')
-
   //reset readmode
-  $('body').hasClass('read-mode') && $('body').removeClass('read-mode')
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
 
-  //reset font-size
-  $('body').css('font-size') !== originFontSize && $('body').css('font-size', parseFloat(originFontSize))
-})</script></div></body></html><script type="text/javascript" src="/js/crash_cheat.js"></script>
+})</script></div></body></html>
