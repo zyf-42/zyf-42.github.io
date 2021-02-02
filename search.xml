@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>markdown的语法</title>
+      <link href="/zyf-42/demo/"/>
+      <url>/zyf-42/demo/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\zyf-42\assets\css\APlayer.min.css"><script src="\zyf-42\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1、标题"><a href="#1、标题" class="headerlink" title="1、标题"></a>1、标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 这是一级标题</span></span><br><span class="line"><span class="section">## 这是二级标题</span></span><br><span class="line"><span class="section">### 这是三级标题</span></span><br></pre></td></tr></table></figure><p>demo：</p><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><blockquote><p>要注意：markdown是极其严格的语法，在井号后需要有空格！！！</p></blockquote><hr><h1 id="2、字体标注"><a href="#2、字体标注" class="headerlink" title="2、字体标注"></a>2、字体标注</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**这是加粗的文字**</span></span><br><span class="line"><span class="emphasis">*这是倾斜的文字*</span>`</span><br><span class="line"><span class="strong">**<span class="emphasis">*这是斜体加粗的文字<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br><span class="line"><span class="strong"><span class="emphasis"><span class="strong"><span class="emphasis">~~这是加删除线的文字~~</span></span></span></span></span><br></pre></td></tr></table></figure><p>demo：<br><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em>`<br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p><hr><h1 id="3、引用"><a href="#3、引用" class="headerlink" title="3、引用"></a>3、引用</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;&gt;这是引用的内容</span><br></pre></td></tr></table></figure><p>demo：</p><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote><hr><h1 id="4、分割线"><a href="#4、分割线" class="headerlink" title="4、分割线"></a>4、分割线</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br></pre></td></tr></table></figure><p>demo：</p><hr><hr><h1 id="5、超链接"><a href="#5、超链接" class="headerlink" title="5、超链接"></a>5、超链接</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">超链接名</span>](<span class="link">超链接地址 &quot;超链接title&quot;</span>)</span><br></pre></td></tr></table></figure><p>demo：</p><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">简书</span>](<span class="link">http://jianshu.com &quot;简书&quot;</span>)</span><br><span class="line">[<span class="string">百度</span>](<span class="link">http://baidu.com &quot;百度&quot;</span>)</span><br></pre></td></tr></table></figure><p><a href="http://jianshu.com/" title="简书">简书</a><br><a href="http://baidu.com/" title="百度">百度</a></p><hr><h1 id="6、列表"><a href="#6、列表" class="headerlink" title="6、列表"></a>6、列表</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 列表内容</span><br><span class="line"><span class="bullet">   1.</span> 列表内容</span><br><span class="line"><span class="bullet">   2.</span> 列表内容</span><br><span class="line"><span class="bullet">   3.</span> 列表内容</span><br><span class="line"><span class="bullet">2.</span> 列表内容</span><br><span class="line"><span class="bullet">   *</span> 列表内容</span><br><span class="line"><span class="bullet">   *</span> 列表内容</span><br><span class="line"><span class="bullet">   *</span> 列表内容</span><br><span class="line"><span class="bullet">3.</span> 列表内容</span><br></pre></td></tr></table></figure><blockquote><p>要注意：序号跟内容之间要有空格，嵌套列表需在上一级和下一级之间敲三个空格，（1. 为有序）（*. 为无序）</p></blockquote><p>demo:</p><ol><li>列表内容<ol><li>列表内容</li><li>列表内容</li><li>列表内容</li></ol></li><li>列表内容<ul><li>列表内容</li><li>列表内容</li><li>列表内容</li></ul></li><li>列表内容</li></ol><hr><h1 id="7、代码块"><a href="#7、代码块" class="headerlink" title="7、代码块"></a>7、代码块</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```</span></span><br><span class="line"><span class="code">代码内容</span></span><br></pre></td></tr></table></figure><pre><code></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【整理】高二生物笔记</title>
       <link href="/zyf-42/@biology/"/>
       <url>/zyf-42/@biology/</url>
