@@ -284,7 +284,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: ;
+  background: url("https://cdn.jsdelivr.net/gh/zyf-42/jpg@1.1/3.jpg");
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
@@ -5993,7 +5993,7 @@ h6:before {
 }
 /* 博主昵称颜色 */
 .author-info__name {
-  color: #142334;
+  color: #a7a8bd;
 }
 /* 评论框  */
 .vwrap {
@@ -6024,7 +6024,7 @@ h6:before {
 /* 评论区代码块 */
 .v[data-class=v] code {
   color: #c7254e;
-  background-color: #f9f2f4;
+  background-color: #83cbac;
 }
 /* header背景透明 */
 #page-header {
@@ -6054,7 +6054,7 @@ h6:before {
 /* 宽度大于800小于9999执行 */
 /* a标签默认颜色 */
 #article-container a {
-  color: #b98deb;
+  color: #83cbac;
   text-decoration: none;
 }
 /* 鼠标悬停时的颜色 */
@@ -6080,15 +6080,15 @@ h6:before {
 }
 /* 首页中间打字效果上方 */
 #page-header #site_title {
-  color: #ccccd6;
+  color: #e2e1e4;
 }
 /* 顶部导航栏 */
 #nav a {
-  color: #b2bbbe;
+  color: #f2cac9;
 }
 /*头部文字颜色*/
 #nav a {
-  color: #fff;
+  color: #b9dec9;
 }
 #go-up i {
   display: none;
