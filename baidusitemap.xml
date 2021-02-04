@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/about/index.html</loc>
+    
+    <lastmod>2021-02-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/categories/index.html</loc>
+    
+    <lastmod>2021-02-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/guestbook/index.html</loc>
+    
+    <lastmod>2021-02-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/link/index.html</loc>
+    
+    <lastmod>2021-02-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/index.html</loc>
+    
+    <lastmod>2021-02-04</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/c++/</loc>
     
     <lastmod>2021-02-04</lastmod>
@@ -128,13 +163,6 @@
   </url>
   
   <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/about/index.html</loc>
-    
-    <lastmod>2021-02-01</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gitee.com/zyf-42/zyf-42.git/baidu_verify_code-Ev34h6OfgZ.html</loc>
     
     <lastmod>2021-01-17</lastmod>
@@ -145,34 +173,6 @@
     <loc>https://gitee.com/zyf-42/zyf-42.git/bangumis/index.html</loc>
     
     <lastmod>2020-12-27</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/link/index.html</loc>
-    
-    <lastmod>2020-10-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/categories/index.html</loc>
-    
-    <lastmod>2020-10-05</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/guestbook/index.html</loc>
-    
-    <lastmod>2020-10-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gitee.com/zyf-42/zyf-42.git/tags/index.html</loc>
-    
-    <lastmod>2020-08-22</lastmod>
     
   </url>
   
