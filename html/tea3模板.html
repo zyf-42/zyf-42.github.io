@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <title>图片对比展示</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    
+
+<div class="twtw-container">
+    <img src="原图片 before img url">
+    <img src="后图片 after img url">
+  </div>
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css" type="text/css" media="all">
+  <style>
+    .twtw-container,
+    .twtw-container img{
+      width: 100%;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"></script>
+  <script>
+    (function(){
+      $(document).ready(
+        function() {
+          initialize_twentytwenty();
+        }
+      );
+      function initialize_twentytwenty(){
+        if($(".twtw-container").twentytwenty){
+          $(".twtw-container").twentytwenty();
+        }else{
+          setTimeout(function(){
+            initialize_twtw();
+          },250);
+        }
+      }
+    })();
+  </script>
+  
+  
+</body>
+
+</html>
